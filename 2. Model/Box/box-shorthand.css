@@ -1,0 +1,22 @@
+.box-short {
+    /* content */
+    width: 400px;
+    height: 300px;
+    background-color: green;
+    background-clip: content-box;
+
+    /* padding */
+    /* top right bottom left */
+    padding: 20px 40px 60px 80px;
+
+    /* (top, bottom), (right,left) */
+    padding: 20px 40px;
+
+    /* border */
+    border: 2px solid #000;
+    border-radius: 50%;
+
+    /* margin */
+    margin: 50px;
+
+}

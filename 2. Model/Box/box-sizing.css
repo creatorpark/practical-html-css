@@ -1,0 +1,11 @@
+.box {
+    /* content */
+    width: 400px;
+    height: 300px;
+    background-color: green;
+    background-clip: content-box;
+    box-sizing: border-box;
+
+    /* padding */
+    padding: 50px;
+}
