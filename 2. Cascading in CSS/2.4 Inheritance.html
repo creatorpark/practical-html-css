@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Inheritance Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif; /* 부모 요소에 적용된 폰트가 자식 요소에 상속됨 */
+            color: blue; /* 부모 요소에 적용된 색상이 자식 요소에 상속됨 */
+        }
+        /* 상속되지 않는 속성 */
+        .box {
+            border: yellow solid;
+        }
+
+        p {
+            border: inherit;
+        }
+    </style>
+</head>
+<body>
+    예제를 디테일하게 전부 수집하자.ㅋㅋ
+    <p>Body로 부터 상속</p>
+    <div class="box">
+        <p>box로 부터 상속되지 않는 border 속성</p>    
+        <!-- inherit 하면 강제로 상속함 -->
+    </div>
+</body>
+</html>
