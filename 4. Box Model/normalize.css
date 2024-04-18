@@ -1,8 +1,0 @@
-/* TODO normalize를 만들어 가는 과정을 보여주면 좋겠다. 
-Box Model을 본격적으로 사용하면서 이제 하나씩 Normalize를 사용하는 과정을 보여주면 좋겠다.
-Specficity가 낮은 것부터 점점 높아지게 설계해서 보여주면
-*/
-body {
-    margin: 0px;
-    padding: 0px;
-}
