@@ -5,9 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>coordinates system | CSS Example</title>
     <style>
-        body {
+        body, html {
             padding: 0;
             margin: 0;
+            box-sizing: border-box;
+            overflow-y: hidden;
         }
         .outer {
             width: 1000px;
@@ -16,11 +18,10 @@
         }
 
         .inner {
-            position: relative;
             width: 500px;
             height: 200px;
-            top: 100px;
-            left: 100px;
+            position: relative;
+            top: 500px; left: 100px;
             background-color: blue;
             color: white;
             cursor: crosshair;
@@ -32,6 +33,7 @@
 
         .log {
             position: relative;
+            top: 20px;
             width: 100%;
             text-align: center;
         }
@@ -42,19 +44,19 @@
         <div class="inner">
           <div class="log">
             <p>
-              Offset-relative: <span id="offsetX">0</span>,
+              Offset: <span id="offsetX">0</span>,
               <span id="offsetY">0</span>
             </p>
             <p>
-              Client-relative: <span id="clientX">0</span>,
+              Viewport: <span id="clientX">0</span>,
               <span id="clientY">0</span>
             </p>
             <p>
-              Page-relative: <span id="pageX">0</span>,
+              Page: <span id="pageX">0</span>,
               <span id="pageY">0</span>
             </p>
             <p>
-              Screen-relative: <span id="screenX">0</span>,
+              Screen: <span id="screenX">0</span>,
               <span id="screenY">0</span>
             </p>
           </div>
