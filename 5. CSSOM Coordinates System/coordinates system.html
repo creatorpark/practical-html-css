@@ -66,11 +66,13 @@
     let log = document.querySelector(".log");
 
     function setCoords(e, type) {
-        const idX = `${type}X`;
-        const idY = `${type}Y`;
+      console.log("type :", type);
+      console.log("e :", e);
+      const idX = `${type}X`;
+      const idY = `${type}Y`;
 
-        document.getElementById(idX).innerText = e[idX];
-        document.getElementById(idY).innerText = e[idY];
+      document.getElementById(idX).innerText = e[idX];
+      document.getElementById(idY).innerText = e[idY];
     }
 
     function update(e) {
