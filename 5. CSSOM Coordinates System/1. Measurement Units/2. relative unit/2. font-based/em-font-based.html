@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>em(font-based) - Relative - Units | CSS Example</title>
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+    }
+
+    .container {        
+      font-size: 20px;
+    }
+
+    .content {        
+      font-size: 2em;
+      width: 3em;
+      border: 2px solid red;
+      padding: 10px;
+      /* box-sizing: border-box; */
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- font-size = 40px -->
+    <!-- width = current-fontsize * 3 = 120px -->
+    <div class="content">em - Relative Units</div>
+  </div>
+</body>
+</html>
