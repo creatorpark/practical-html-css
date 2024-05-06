@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>static - position | CSS Sample</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        /* 1, 1.1, 1.2 3개를 비교해 보면, 왜 121이 나왔는지 이해가 된다. */
+        div {
+            width: 100px; height: 100px;
+            background-color: skyblue;
+
+            position: static;
+            top: 100px; 
+            left: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div><p>일반적인 경우1</p></div>
+    <p>일반적인 경우2</p>
+</body>
+</html>

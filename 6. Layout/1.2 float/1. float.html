@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>relative - position | CSS Sample</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        .container {
+            width: 500px; height: 400px;
+        }  
+
+
+        .apple {
+            padding: 5px;
+            width: 100px; height: 100px;            
+        }
+
+        .float_left {
+            float: left;
+        }
+
+        .float_right {
+            float: right;
+        }
+
+        .clear_float {
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+    <h2>빨개요</h2>
+    <br>
+    <div class="container">
+        <p>원숭이 엉덩이는 빨개 빨가면 사과 사과는 맛있어 맛있으면 바나나 바나나는 길어 길으면 기차 기차는 빨라 빠르면 비행기 비행기는 높아 높으면 백두산</p>
+        <br>
+        <p>
+            <img class="apple float_left" src="./apple.jpg"/><span class="float_left">파란사과 줄까?</span>
+            <img class="apple float_right" src="./green_apple.gif"/><span class="float_right">빨간 사과 줄까?</span>
+        </p>
+        <p class="clear_float">아침에 사과 1개를 먹으면 건강에 좋습니다.</p>
+    </div>
+</body>
+</html>
