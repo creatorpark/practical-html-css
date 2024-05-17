@@ -50,3 +50,7 @@ Figma로 퍼블리싱 할 수 있는 실력
 - SASS
 - Figma Hands-Off
 - Publishing Website
+- React, Vue Plugin 을 통해 디자인 시스템을 만들면 퍼블리싱이 거의 끝나는 것을 보여주면 될듯.
+  
+
+  
