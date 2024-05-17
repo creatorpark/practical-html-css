@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Specificity - CSS Example</title>
+    <style>
+        /* 0 0 1 */
+        button {
+            border: 2px solid;
+            padding: 10px;
+            background-color: red;
+        }
+
+        /* 0 1 1 */
+        button:hover {
+            background-color: green;
+        }
+
+        /* 0 1 0 */
+        .orange {
+            background-color: orange;
+        }
+
+        #yello {
+            background-color: yellow;
+        }
+
+        /* 버튼의 의사 요소에 대해 알아보자 */
+        button::before {
+            display: block;
+            background-color: blue;
+            border-radius: 50%;
+            margin-right: 5px;
+        }
+
+        .indigo {
+            background-color: indigo;
+        }
+
+        .purple {
+            background-color: purple;
+        }
+    </style>
+</head>
+<body>
+    
+    <!-- 0 0 1 -->
+    <button>빨강 버튼</button>
+    <button class="orange">주황 버튼</button>
+    <button id="yello">노랑 버튼</button>
+    <!-- 1 0 0 0 -->
+    <button style="background-color: green;">초록 버튼</button>
+    <!-- Inline Style을 재정의 하고 싶을 때 !important -->
+
+    <!-- 0 1 1 -->
+    <p>이 문장의 색깔은?</p>
+</body>
+</html>
