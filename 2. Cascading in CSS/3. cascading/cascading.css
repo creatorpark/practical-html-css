@@ -1,0 +1,12 @@
+h2 {
+    font-size: 24px;
+    color: blue;
+}
+
+.indigo {
+    color: indigo;    
+}
+
+.black {
+    color: black !important;
+}
