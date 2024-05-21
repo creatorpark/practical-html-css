@@ -8,12 +8,17 @@
     <style>
       h2 {
         color : green;
+      } 
+
+      .pink {
+        color: pink !important;
       }
     </style>
 </head>
 <body>
-  <h2 class="indigo">H2. Specificity가 Internal h2보다 External의 .indigo가 더 높다. Indigo</h2>
-  <h2 class="indigo" style="color: red;">H2. Specificity가 Inline이 높다. Red</h2>
-  <h2 class="black" style="color: red;">H2. Specificity가 external의 black이 제일 높다. Black</h2>
+  <h2 class="indigo">H2. Specificity가 Internal의 h2보다 External의 .indigo가 더 높다. Indigo</h2>
+  <h2 class="indigo" style="color: red;">H2. Specificity가 External, Internal보다 Inline이 더 높다. Red</h2>
+  <h2 class="black" style="color: red;">H2. Specificity가 External의 black(important)이 제일 높다. Black</h2>
+  <h2 class="black pink">H2. Specificity가 Internal의 pink(important)가 제일 높다. Pink</h2>
 </body>
 </html>
