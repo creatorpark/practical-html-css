@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pSeudo-Elements - Selectors | CSS Example</title>
+    <style>
+    p {
+        padding: 10px 20px;
+    }
+
+    .paragraph::before {
+        content: "Start: ";
+        color: green;
+    }
+
+    .paragraph::after {
+        content: " :End";
+        color: red;
+    }
+
+    .first-line::first-line {
+        font-weight: bold;
+        color: blue;
+    }
+
+    .first-letter::first-letter {
+        font-size: 2em;
+        color: purple;
+    }
+  </style>
+</head>
+<body>
+  <p class="paragraph">This is an example paragraph.</p>
+  <p class="first-line">This is another example paragraph with the first line styled differently.</p>
+  <p class="first-letter">This paragraph has the first letter styled differently.</p>
+</body>
+</html>
