@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+        
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pseudo-Elements - Selectors | CSS Example</title>
+    
     <style>
-
-    /* HTML Contents Model을 자세하기 이해하기 */
+    /* 주석1 */
     button {
         padding: 10px 20px;
     }
@@ -19,10 +20,23 @@
         content: " →";
         color: red;
     }
+
+    br {
+        content: "한칸";
+    }
+    
+    br::after {
+        content: " "; /* 빈 문자열을 삽입합니다. */
+        display: block; /* 블록 요소로 표시합니다. */
+        width: 50px; /* 너비를 50픽셀로 설정합니다. */
+        height: 10px; /* 높이를 10픽셀로 설정합니다. */
+        background-color: red; /* 배경색을 빨간색으로 설정합니다. */
+    }
     </style>
 </head>
 <body>
     <button>Click Me</button>
+    <p>BR을 테스트 해보자<br>얘는 pseudo-elements가 적용 되나?</p>
 </body>
 </html>
 
