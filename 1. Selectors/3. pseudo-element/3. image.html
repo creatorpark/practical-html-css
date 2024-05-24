@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-Elements - Selectors | CSS Example</title>
+    <style>
+
+/* 
+img 태그 양 옆에 before, after가 안되는 이유...
+https://stackoverflow.com/questions/7396469/why-dont-before-and-after-pseudo-elements-work-with-img-elements
+
+https://coding-food-court.tistory.com/34
+
+안되는 이유라기 보다..
+Pseudo-elements가 지원하는 메소드가 목적이 Text 양옆에 추가하는 거라 img 같은거에는 안되는게 정상인듯
+https://www.w3schools.com/css/css_pseudo_elements.asp
+
+HTML Spec 문서를 보고, img와 paragraph의 차이를 보자.
+일단 img에는 end-tag가 없네.
+*/
+
+    image::before {
+        content: "← ";
+        color: green;
+    }
+    
+    image::after {
+        content: " →";
+        color: red;
+    }
+    </style>
+</head>
+<body style="overflow-x: hidden">
+    <img src="./cats.jpg" alt="고양이와 친구들">
+</body>
+</html>

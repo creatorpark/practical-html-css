@@ -9,7 +9,6 @@
 - https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_selectors  
 
 
-
 - Box Model
   - pSeudo-Elements
 - Cascading
@@ -55,10 +54,17 @@
 
 Figma로 퍼블리싱 할 수 있는 실력
 
+방향성   
+1. Styling Series는 
+나중에 만들어지는 Design Hand-Off 버전을
+알게 모르게 하나 하나 구현해 가는 과정을 담는다.
+2. Styling Series에서 알아야 하는 요소들을 설명하는 방식으로 이 소스를 구성한다.
+
+
 ## sample-css 2편
 고급 CSS
 - Transition
 - Transform
 - Web Animation
   - Web Animation 기반 Library
-  
+
