@@ -9,6 +9,16 @@
 - https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_selectors  
 
 
+1차 버전 정리 지점
+- CSS Rendering Part Layout, Paint, 소스 해보면서 정리. 
+중국 친구가 한 문서 보고 
+Display Box와 Flex, Grid 정리. 
+pSeudo-Elements
+pSeudo-Class
+까지 정리.
+
+
+
 - Box Model
   - pSeudo-Elements
 - Cascading
