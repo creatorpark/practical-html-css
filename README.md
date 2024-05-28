@@ -2,7 +2,8 @@
 - Selectors
   - id, 
   - class, attributes, pSeudo-Class
-    - Elements의 상태란 무엇인가. 이 값은 어디서 확인함?
+    - TODO Elements의 상태란 무엇인가. 이 값은 어디서 확인함?
+    - 이게 Element Node에 어디에 정보가 있는 건가?
   - elements, pSeudo-Elements
   - all Elements
 - Simple Selectors -> Compound Selectors -> Complex Selectors
