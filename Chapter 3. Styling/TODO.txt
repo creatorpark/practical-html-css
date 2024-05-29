@@ -1,0 +1,12 @@
+Design Rules
+
+BEM
+- CSS Naming Convention
+- Block-Elemenent-Modifier
+
+ATOMIC Design - Design System
+Elements - Atoms
+Groups - Molecules (Elements+)
+Components - Organisms (Elements+, Molecules+)
+Layouts - Templates
+Pages - Pages

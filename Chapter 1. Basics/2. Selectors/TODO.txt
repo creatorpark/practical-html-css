@@ -1,0 +1,16 @@
+아래는 정의에 의한 구분
+https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_selectors/Selector_structure
+
+1. Simple Selectors
+- 단일 선택자.
+2. Compound Selectors
+- Simple Selectors가 연결된 경우
+3. Complex selectors
+- 자식 선택
+4. Relative Selectors
+- 전체에서 상대적인 걸 선택
+
+
+원문은 여기
+https://www.w3.org/TR/selectors-4/#selector-combinator
+
