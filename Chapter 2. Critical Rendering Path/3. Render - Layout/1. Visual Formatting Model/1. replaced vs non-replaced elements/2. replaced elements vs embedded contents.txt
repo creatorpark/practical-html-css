@@ -1,0 +1,19 @@
+CSS Spec - Replaced Elements
+HTML Spec - Embedded Contents
+
+replaced-element
+https://drafts.csswg.org/css-display/#replaced-element
+https://html.spec.whatwg.org/#replaced-elements
+img, audio, video, object, canvas, embed, iframe,
+** input
+Render가 따로 있따...?
+이거 개념이 정리되야 하네 찾아서 정리하기
+
+
+Embedded Contents
+https://html.spec.whatwg.org/#embedded-content-2
+img, audio, video, object, canvas, embed, iframe, 
+** picture, svg, MathML(math)
+NameSpace만 외부 것을 쓰지 실제로는 직접 Rendering 한다.
+
+

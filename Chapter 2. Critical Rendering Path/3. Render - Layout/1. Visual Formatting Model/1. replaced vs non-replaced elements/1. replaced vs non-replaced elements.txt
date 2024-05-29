@@ -1,0 +1,29 @@
+1. replaced-elements
+- CSS Formatting Model 규칙에 의해 CSS Render가 elements의 content를 직접 렌더링 하지 않는다.
+- 위임 된다.
+- 그러나 레이아웃에는 참조된다.
+- 대부분의 embedded elements + input
+- ** input은 왜 일까? 그럼 얘는 렌더러가 다른데 있다는 거다.
+
+2. non-replaced elements
+- CSS Formatting Model 규칙에 의해 CSS Render가 elements의 content를 직접 렌더링 한다.
+- 이슈 없음.
+
+
+왜 알아야 하는가?
+replaced elements 와 non-replaced elements를 구분 할 줄 모르면 생기는 이슈
+- pseudo-elements로 스타일을 줬는데 먹지 않는다.
+
+
+Formatting Model에서 사용한다는 것 자체가..
+얘를 이해하는데, Critical Rendering Path의 Visual Formatting Model부분을 봐야 안다는 거지.
+
+An element whose content is outside the scope of the CSS formatting model, 
+such as an image or embedded document. 
+The content of replaced elements is not considered in the CSS formatting model; 
+however, their natural dimensions are used in various layout calculations. 
+Replaced elements always establish an independent formatting context.
+A non-replaced element is one that is not replaced, 
+i.e. whose rendering is dictated by the CSS model.
+
+

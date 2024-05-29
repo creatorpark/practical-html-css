@@ -1,6 +1,8 @@
-아래는 정의에 의한 구분
-https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_selectors/Selector_structure
+스펙 문서
+https://www.w3.org/TR/selectors-4/
 
+
+단순하게 정리
 1. Simple Selectors
 - 단일 선택자.
 2. Compound Selectors
@@ -10,7 +12,5 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_selectors/Selector_structur
 4. Relative Selectors
 - 전체에서 상대적인 걸 선택
 
-
-원문은 여기
-https://www.w3.org/TR/selectors-4/#selector-combinator
-
+참고 자료)
+https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_selectors/Selector_structure

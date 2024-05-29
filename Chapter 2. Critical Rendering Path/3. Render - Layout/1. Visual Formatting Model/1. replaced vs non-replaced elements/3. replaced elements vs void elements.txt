@@ -1,0 +1,18 @@
+HTML Elements에 나옴
+void elements : self-closing tag - 자식 Elements를 가질 수 없게 되지.
+- area, base, br, col, embed, hr, img, input, link, meta, source, track, wbr
+content를 가지지 않음
+
+----
+replaced Elements vs non-replaced HTML Elements
+- wbr등에 content 집어 넣고 되나 확인 - 확인함
+
+vs Void Elements
+영역을 차지 하지 않아서(content가 없기 때문에) 그려지지 않지만 강제로 넣으면 된다.
+Replaced Elements는 이런 것도 안된다.
+
+시작 지점 - 여기서 무엇을 확인하려고 했을 까.. 이 부분이 좀 정리되야 할 것 같다.
+replaced elements는 contents를 대체한다는 의미여서
+
+그럼 contents가 nothing이거나 void elements인 경우의 pseudo-elements는 어떻게 되지?
+결론은 안된다. 라고 생각이 든거지. ㅋㅋㅋㅋ 이게 질문의 1번째였군

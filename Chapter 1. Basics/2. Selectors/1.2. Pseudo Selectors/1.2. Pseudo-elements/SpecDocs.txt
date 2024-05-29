@@ -1,0 +1,3 @@
+pseudo-elements Spec
+https://www.w3.org/TR/css-pseudo-4/
+

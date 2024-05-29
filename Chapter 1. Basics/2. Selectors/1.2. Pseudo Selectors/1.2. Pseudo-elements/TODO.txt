@@ -1,0 +1,13 @@
+1. pseudo-element는 Spec에 보듯이 Text 위주의 요소를 스타일링 합니다.
+2. before, after만 빼고 얘는 Text를 조작하는게 아니죠.ㅋㅋ
+
+일단 여기서는 가상의 의미를 정리하는 게 좋겠다.
+DOM에 없는 요소를 렌더링 한다는 의미.
+
+이걸 여기에 정리하자.
+
+before, after 확인 목록
+picture, svg, math 확인, input 확인. input도 
+wbr 같은 것도 확인
+
+TODO replaced-elements에서 input도 
