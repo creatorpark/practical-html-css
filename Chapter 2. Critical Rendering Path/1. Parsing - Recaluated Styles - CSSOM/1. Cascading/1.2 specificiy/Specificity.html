@@ -6,7 +6,7 @@
     <title>Specificity - CSS Example</title>
     <style>
         /* Level 3 */
-        /* elements 0 0 1 */
+        /* elements 0 0 0 1 */
         button {
             border: 2px solid;
             padding: 10px;
@@ -14,17 +14,17 @@
         }
 
         /* Level 2 */
-        /* class 0 1 0 */
+        /* class 0 0 1 0 */
         .orange {
             background-color: orange;
         }
-        /* pSeudo-class 0 1 1 */
+        /* pSeudo-class 0 0 1 1 */
         button:hover {
             background-color: white;
         }
 
         /* Level 1 */
-        /* ID 1 0 0 */
+        /* ID 0 1 0 0 */
         #yello {
             background-color: yellow;
         }
@@ -43,9 +43,9 @@
 </head>
 <body>
     <!-- Embedded Style Sheet -->
-    <button>빨강 버튼</button>  <!-- 0 0 1 -->
-    <button class="orange">주황 버튼</button>   <!-- 0 1 0 -->
-    <button id="yello">노랑 버튼</button>   <!-- 1 0 0 -->
+    <button>빨강 버튼</button>  <!-- 0 0 0 1 -->
+    <button class="orange">주황 버튼</button>   <!-- 0 0 1 0 -->
+    <button id="yello">노랑 버튼</button>   <!-- 0 1 0 0 -->
 
     <!-- Inline Style Sheet 1 0 0 0 -->
     <button style="background-color: green;">초록 버튼</button>
