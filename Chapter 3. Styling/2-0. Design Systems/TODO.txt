@@ -1,10 +1,6 @@
-Design Rules
+Design System 
+ with ATOMIC Design
 
-BEM
-- CSS Naming Convention
-- Block-Elemenent-Modifier
-
-ATOMIC Design - Design System
 Elements - Atoms
 Groups - Molecules (Elements+)
 Components - Organisms (Elements+, Molecules+)

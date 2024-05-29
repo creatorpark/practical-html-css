@@ -7,10 +7,3 @@ HTML에서 DOM을 배웠고, CSS는 DOM에서 Styling을 하는 것이기 때문
 DOM을 기반으로 CSSOM에서는 어떤 역할을 하는지. 각자의 역할을 구분해서 정리해 보면
 CSS의 성능 개선과 CSS를 작성하면서 DOM과 CSSOM을 구분하지 않고 생각해서 생기는 혼동에서
 벗어날 수 있다.
-
-
-HTML에서 정보중에 Style에 사용하는 정보
-id - only one 
-class, attributes - Custome Group
-element - Element Group
-* - All
