@@ -1,0 +1,28 @@
+HTML - HTML Elements
+CSSOM - style-related (CSS) information
+
+HTML과 CSS는 저장되는 곳이 다르다.
+
+HTML에 저장되는 곳
+-> 이건 HTML에서 강의
+
+CSS에 저장되는 곳
+-> 이건 CSS에서 강의
+
+왜 다른가요?
+관리의 효율성.
+- 역할 분담을 통한 대규모 처리.
+
+혼자 하려면
+냉장고, 박스로 정리된 냉장고
+옷정리 박스로 정리된 옷정리를 보여줄 것
+
+회사 Role & Responsibility
+
+HTML - HTML Elements
+CSSOM - style-related (CSS) information
+
+왜 CSSOM부터 배우냐
+의미가 정확하게 어떻게 파생되었는지 알면 
+성능 개선과 CSS를 만들면서 생기는 혼동에서 해방된다.
+
