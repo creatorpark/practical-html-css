@@ -3,3 +3,11 @@ cascade 적용 순서
 https://mycodings.fly.dev/blog/2023-02-13-understanding-css-cascade-specificity
 
 https://goateedev.tistory.com/228
+
+
+
+목표 
+기본적인 CSS를 어떻게 만드는지
+- 작성법
+- 개념 이해
+- 기초 세팅
