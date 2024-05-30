@@ -4,7 +4,6 @@ https://www.w3.org/TR/selectors-4/
 
 단순하게 정리
 1. Simple Selectors
-- 단일 선택자.
 2. Compound Selectors
 - Simple Selectors가 연결된 경우
 3. Complex selectors
