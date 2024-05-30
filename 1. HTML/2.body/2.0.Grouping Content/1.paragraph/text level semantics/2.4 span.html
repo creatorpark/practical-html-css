@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>span - Text Level Semantics - Paragraph - Grouping | HTML Sample</title>
+    <style>
+        .myCss {
+            color: blue;
+        }
+        h1 {
+            font-weight: bold; /* 대제목의 글꼴 굵기 */
+            margin-bottom: 20px; /* 아래 여백 */
+        }
+        h2 {
+            background-color: skyblue;
+            margin-top: 30px; /* 위 여백 */
+            margin-bottom: 15px; /* 아래 여백 */
+        }
+        article {
+            background-color: wheat;
+            margin-bottom: 40px; /* 아래 여백 */
+        }         
+    </style>     
+</head>
+<body>
+    <!--
+    Inline Container used to mark up a part of text
+    It doesn't mean anyting on its own.    
+
+    ** Custom Text Level Semantics Tag **
+
+    Alternatives
+    - Text Level Semantics Tags
+    (a, em, strong, label, q, ins/del, code, abbr, cite ..)
+    (data, time, mark ...)
+    -->
+    <main>
+        <section>
+            <header>
+                <h1>Text Level Semantics</h1>
+            </header>
+    
+            <article>
+                <header>
+                    <h2>span </h2>
+                </header>    
+                <p>My mother has <span class="myCss">blue</span> eyes.</p>
+                <br>
+                <p>My mother has <strong class="myCss">blue</strong> eyes.</p>
+            </article>
+        </section>
+    </main>
+</body>
+</html>

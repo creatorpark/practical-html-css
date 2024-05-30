@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multimedia - Embedded | HTML Sample</title>
+</head>
+<body>
+<!--
+Categories:
+Flow, Phrasing, Embedded
+has a controls : Interactive, Palpable
+
+Content model:
+If the element does not have a src attribute: 
+zero or more source/track elements, then transparent, 
+but with no media element descendants.
+-->
+
+<!-- 크롬 정책 때문에 mp3는 바로 안된다. -->
+<!-- <audio id="myAudio" src="./multimedia/audio-sample.ogg" autoplay></audio> -->
+
+<br><br>
+
+<audio controls>
+    <source src="./audio-sample.mp3" type="audio/mpeg">
+    <source src="./audio-sample.ogg" type="audio/ogg">
+    이부분은 Transparent다.. 상위 부모의(지금은 body) Content Model을 따른다.
+    Your browser does not support the audio element.    
+</audio>
+
+
+<hr>
+<p>
+<video src="./video-sample.ogg" autoplay></video>
+<!-- <video controls>
+    <source src="./video-sample.avi" type="video/mpeg">
+    <source src="./video-sample.ogg" type="video/ogg">
+    Your browser does not support the video element.
+</video> -->
+</p>
+</body>
+</html>

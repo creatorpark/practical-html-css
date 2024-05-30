@@ -1,0 +1,35 @@
+Type of Elements : Elements의 Parsing이나 예외처리 기준
+
+HTML 초급과정
+https://en.wikipedia.org/wiki/HTML_element
+
+
+1. Tags
+1-1. normal elements : start, end tag
+1-2. void elements : self-closing tag - 자식 Elements를 가질 수 없게 되지.
+- area, base, br, col, embed, hr, img, input, link, meta, source, track, wbr
+
+2. Raw Text elements 
+2-1. Raw text elements
+- style, script
+
+2-2. Escapable raw text elements : 
+- textarea, title
+이스케이프 가능한 원시 텍스트 요소
+일부 특수 문자를 해석하지 않고 그대로 표시하는 요소
+
+
+3. 외부에 정보가 있는 경우
+3-1. foreign elements 
+: mathML, SVG namespace에 속한 Elements를 사용합니다.
+
+3-2. The template element 
+: == Vue Template 
+
+Template 요소는 template contents를 갖는데, 이는 template의 자식은 아니다.
+template contents는 기본 Document를 방해하지 않도록 
+browsing context가 없는 DocumentFragment에 저장된다.
+
+https://www.w3schools.com/tags/tryit.asp?filename=tryhtml5_template
+
+TODO Browsing Context

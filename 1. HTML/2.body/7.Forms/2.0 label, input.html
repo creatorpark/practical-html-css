@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>input, label - Forms | HTML Sample</title>
+    <link rel="stylesheet" href="./stylesheet.css">
+</head>
+<body>
+    <form>
+        <!-- for는 연결하고자 하는 요소의 id와 매핑한다. 
+            그러면 스크린 리더는 바로 input으로 이동한다.
+            label을 클릭하면 input 요소에 포커싱 된다.
+            TODO 이건 한바퀴 만들어 보고 예제를 다최적화 한다.
+            id
+         -->
+        <fieldset>
+            <legend>주요 Profile</legend>
+            <label for="profileImage">프로필 사진:</label>
+            <input type="file" id="profileImage" name="profileImage" accept="image/*">
+            <br><br>
+            <label for="birthday">생년월일:</label>
+            <input type="date" id="birthday" name="birthday" required>
+            <div>
+                성별 :
+                <label for="male">남성</label>
+                <input type="radio" id="male"  name="gender" value="1" checked>
+                <label for="female">여성</label>
+                <input type="radio" id="female"  name="gender" value="0">
+            </div>
+            <label for="phone">전화번호:
+                <input type="tel" id="phone" name="phone" placeholder="전화번호를 입력하세요.">
+            </label>            
+        </fieldset>
+        <label>취미:</label>
+        <br>
+        <input type="checkbox" id="hobby1" name="hobby" value="reading">
+        <label for="hobby1">독서</label>
+        <br>
+        <input type="checkbox" id="hobby2" name="hobby" value="music">
+        <label for="hobby2">음악 감상</label>
+        <br>
+        <input type="checkbox" id="hobby3" name="hobby" value="sports">
+        <label for="hobby3">운동</label>
+        <br>
+        <button type="submit">저장</button>
+    </form>
+    <form>
+        <fieldset>
+            <legend>Login</legend>
+            <label for="email">이메일:</label>
+            <input type="email" id="email" name="email" placeholder="이메일 주소를 입력하세요." required>
+            <br>
+            <label for="password">비밀번호:</label>
+            <input type="password" id="password" name="password" required>
+            <button type="submit">저장</button>
+        </fieldset>
+    </form>
+    <form>
+        <label for="number">숫자 입력:</label>
+        <input type="number" id="number" name="number" min="1" max="100">
+        <br>
+        <label for="url">URL 입력:</label>
+        <input type="url" id="url" name="url" placeholder="웹사이트 주소를 입력하세요.">
+        <label for="favoriteColor">좋아하는 색:</label>
+        <input type="color" id="favoriteColor" name="favoriteColor" value="#ff0000">
+        <br>
+        <input type="hidden" id="hiddenValue" name="hiddenValue" value="secret">
+        <br>
+        <input type="image" src="image.png" alt="Submit" width="48" height="48">
+        <br>
+        <input type="search" id="search" name="search" placeholder="검색어를 입력하세요.">
+        <br>
+        <label for="range">범위 입력:</label>
+        <input type="range" id="range" name="range" min="0" max="100" value="50">
+        <br>
+        <button type="submit">저장</button>        
+    </form>
+</body>
+</html>

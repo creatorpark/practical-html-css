@@ -1,0 +1,6 @@
+1. HTML5 이전 
+<!DOCTYPE html>과 지금의 DOC TYPE이 달라진 배경
+
+2. 그리고, living standard로 변경되면서 반경된 
+DTD가 필요없어져서 생긴 변화 NODE에 필요 없어진 것
+등등 정리

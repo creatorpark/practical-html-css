@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ins, del - Text Level Semantics - Paragraph - Grouping | HTML Sample</title>
+    <style>
+    h1 {
+        font-weight: bold; /* 대제목의 글꼴 굵기 */
+        margin-bottom: 20px; /* 아래 여백 */
+    }
+    h2 {
+        background-color: skyblue;
+        margin-top: 30px; /* 위 여백 */
+        margin-bottom: 15px; /* 아래 여백 */
+    }
+    
+    article {
+        background-color: wheat;
+        margin-bottom: 40px; /* 아래 여백 */
+    }            
+    </style>
+</head>
+<body>
+    <!-- 
+        변경 이력 의미를 갖는 문서를 만들 때 사용한다.        
+        1. cite로 출처를
+        2. datetime으로 발생시점을 작성한다.
+        위키 피디아에서 많이 사용한다.
+    --> 
+    <main>
+        <section>
+            <header>
+                <h1>Text Level Semantics</h1>
+            </header>
+        
+            <article>
+                <header>
+                    <h2>의미 없이 기능만 구현된 서식#2(s)</h2>
+                </header>
+                <p>
+                    대한민국 제18대 대통령 박근혜는 2013년 2월 25일 취임하였으며
+                    <s>2018년 2월 24일 퇴임할 예정이다.</s>
+                    2017년 3월 10일 헌법재판소의 탄핵 인용 결정으로 대통령직에서 파면되었다.
+                </p>
+            </article>
+
+            <article>
+                <header>
+                    <h2>의미 있게 만든 서식#2(ins, del)</h2>
+                </header>
+                <p>
+                    대한민국 제18대 대통령 박근혜는 2013년 2월 25일 취임하였으며
+                    <del datetime="2017-03-10">2018년 2월 24일 퇴임할 예정이다.</del>
+                    <ins datetime="2017-03-10">2017년 3월 10일 헌법재판소의 탄핵 인용 결정으로
+                    대통령직에서 파면되었다.</ins>
+                </p>
+            </article>
+        </section>
+    </main>
+</body>
+</html>

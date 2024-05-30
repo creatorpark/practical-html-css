@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>area - Links | HTML Sample</title>
+</head>
+<body>
+    <!--
+        image에서 map으로 링크 달아서 연결되게 하는 것.
+        https://www.image-map.net/
+        여기서 이미지의 위치를 지정해서 예제를 만들 수 있다.
+    -->
+
+<img src="area.jpg" usemap="#image-map">
+
+<map name="image-map">
+    <area target="_blank" alt="치즈고양이" title="치즈고양이" href="1.0 links.html" coords="219,547,427,555,477,521,514,478,485,324,463,297,440,246,440,96,343,122,225,98,240,176,246,227,270,269,262,358,249,503,233,518" shape="poly">
+    <area target="_blank" alt="노란고양이" title="노란고양이" href="1.1 a.html" coords="670,549,509,39" shape="rect">
+    <area target="_blank" alt="블랙고양이" title="블랙고양이" href="1.2 link.html" coords="693,539,921,72" shape="rect">
+    <area target="_blank" alt="회색고양이" title="회색고양이" href="1.3 form.html" coords="1173,39,931,540" shape="rect">
+</map>
+
+</body>
+</html>

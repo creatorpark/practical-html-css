@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./stylesheet.css">
+    <title>form - Forms | HTML Sample</title>
+</head>
+<body>
+<!--
+search HTML 스펙 23년 10월부터 도입된 최신 스펙
+Can I Use에서 지원하는 브라우져 사용량 보고 검색.
+
+input type="search"를 하면 일반 input과 다르게 
+브라우져에 x버튼이 보인다.
+-->
+<h1>Old Search</h1>
+<form action="/search" method="GET">
+    <input type="search" name="q" placeholder="검색어를 입력하세요."/>
+    <button type="submit">Search</button>
+</form>
+
+<h1>New Search</h1>
+<search>
+    <form action="/search" method="GET">
+      <input type="search" name="q" placeholder="검색어를 입력하세요."/>
+      <button type="submit">Search</button>
+    </form>
+</search>
+
+</body>
+</html>

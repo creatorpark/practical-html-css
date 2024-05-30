@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>role - WAI-ARIA | HTML Sample</title>
+</head>
+<body>
+<!-- 
+role은 무엇인가요? 
+WAI-ARIA - RIA를 위한 접근성 지침
+https://alvaromontoro.com/blog/68033/new-html-element-search
+
+-->
+<h1>Upgrade Search</h1>
+<!-- search 태그를 지원하지 않는 브라우저를 위해 role="search"를 명시해준다 -->
+<search role="search">
+    <form action="/search" method="get">
+      <input type="search" name="q" placeholder="검색어를 입력하세요."/>
+      <button type="submit">Search</button>
+    </form>
+</search>
+
+</body>
+</html>

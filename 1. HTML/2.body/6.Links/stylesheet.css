@@ -1,0 +1,16 @@
+h1 {
+    font-weight: bold; /* 대제목의 글꼴 굵기 */
+    margin-bottom: 20px; /* 아래 여백 */
+    background-color: gold;
+}
+
+h2 {
+    background-color: skyblue;
+    margin-top: 30px; /* 위 여백 */
+    margin-bottom: 15px; /* 아래 여백 */
+}
+
+article {
+    background-color: wheat;
+    margin-bottom: 40px; /* 아래 여백 */
+}

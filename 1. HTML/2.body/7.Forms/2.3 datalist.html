@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>datalist - Forms | HTML Sample</title>
+</head>
+<body>
+    <!-- Predefined Options -->
+    <form action="/action_page.php" method="get">
+        <label for="browser">Choose your browser from the list:</label>
+
+        <input list="browsers" name="browser" id="browser">
+        <datalist id="browsers">
+          <option value="Edge">
+          <option value="Firefox">
+          <option value="Chrome">
+          <option value="Opera">
+          <option value="Safari">
+        </datalist>
+      </form>
+</body>
+</html>

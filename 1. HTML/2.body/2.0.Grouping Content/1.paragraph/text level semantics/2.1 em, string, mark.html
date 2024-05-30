@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Level Semantics - Paragraph - Grouping | HTML Sample</title>
+    <style>
+        h1 {
+            font-weight: bold; /* 대제목의 글꼴 굵기 */
+            margin-bottom: 20px; /* 아래 여백 */
+        }
+        h2 {
+            background-color: skyblue;
+            margin-top: 30px; /* 위 여백 */
+            margin-bottom: 15px; /* 아래 여백 */
+        }
+        h3 {
+            background-color: seagreen;
+            margin-top: 20px; /* 위 여백 */
+            margin-bottom: 10px; /* 아래 여백 */
+        }        
+
+        article {
+            background-color: wheat;
+            margin-bottom: 40px; /* 아래 여백 */
+        }
+        .underlined-text {
+                text-decoration: underline;
+        }
+        
+    </style>    
+</head>
+<body>
+    <main>
+        <section>
+            <header>
+                <h1>Text Level Semantics</h1>
+            </header>
+            <article>
+                <header>
+                    <h2>의미 없이 기능만 구현된 서식(i,b,u)</h2>
+                </header>
+                <p>이전에 기능만을 강조하던 시절의 태그.</p><!-- 에디터에서 자주 보이던 -->
+                
+                <h3>이탤릭 i</h3>
+                <p>교수님 왈 "<i>시험 대비 공부 시간을 확보하기 위해</i>" 휴강한다고 합니다.</p>
+                <h3>굵게 b</h3>
+                <p><b>경고!</b> 다음 사항에 주의하십시오.</p>
+                <h3>언더라인 u</h3>
+                <p>u태그는 <u>더이상 추천하지 않습니다</u></p>
+            </article>
+            <article>   
+                <header>
+                    <h2>의미 있게 만든 서식</h2>
+                </header> 
+                <p>기계가 이해하기 쉽게 의미를 부여한 태그</p>
+                
+                <h3>강조 em : 의도</h3>    
+                <p>교수님 왈 "<em>시험 대비 공부 시간을 확보하기 위해</em>" 휴강한다고 합니다.</p>
+                <h3>중요 strong : </h3>
+                <p><strong>경고!</strong> 다음 사항에 주의하십시오.</p>
+                <h3>언더 라인</h3>
+                <p>u태그의 대체로 ins태그가 <ins>u태그와 동일한 기능을 하지만,<br>
+                    중요한 것은 태그의 의미입니다.</ins></p>
+
+                <h3>주요 내용 mark - 주로 검색 결과에서 Search한 단어를 매칭해줄 때</h3>
+                <p>검색 결과에서 <mark>중요한 단어</mark>가 강조됩니다.</p>
+                <p>구글이나 네이버에서 많이 사용됩니다.</p>
+            </article>
+        </section>
+    </main>
+</body>
+</html>

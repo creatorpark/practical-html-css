@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>table - Tabular data | HTML Sample</title>
+</head>
+<body>
+<table>
+    <caption style="caption-side:bottom">주식으로 얼마나 벌었나</caption>
+    <colgroup>
+        <col span="2" style="background-color:green">
+        <col style="background-color:goldenrod">
+      </colgroup>    
+    <thead>
+        <tr>
+            <th>국가</th>
+            <th>종목</th>
+            <th>금액</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td rowspan="2">한국</td>
+            <td>삼성전자</td>
+            <td>500000</td>
+        </tr>
+        <tr>
+            <td>하이닉스</td>
+            <td>300000</td>
+        </tr>
+        <tr>
+            <td>미국</td>
+            <td>테슬라</td>
+            <td>500000</td>
+        </tr>  
+    </tbody>
+    <tfoot>
+        <tr>
+            <td colspan="2">총수익</td>
+            <td>1300000</td>
+        </tr>
+    </tfoot>  
+</table>
+
+
+</body>
+</html>

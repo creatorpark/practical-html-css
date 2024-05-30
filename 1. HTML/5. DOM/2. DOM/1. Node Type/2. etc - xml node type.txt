@@ -1,0 +1,33 @@
+HTML 5 이전과 이후
+Entity Node와 관련된 많은 노드 유형(Entity Node, Entity Reference Node, Notation Node 등)은 
+XML DTD(Document Type Definition)와 관련된 개념으로,
+HTML5에서는 거의 사용되지 않습니다. 
+그 이유는 HTML5에서 DTD를 사용하지 않기 때문입니다.
+
+
+XML과 DTD
+: XML에서는 문서의 구조를 정의하기 위해 DTD를 사용합니다. 
+DTD는 문서에서 사용할 수 있는 요소, 속성, 엔티티 등을 정의합니다. 
+엔티티는 문자나 문자열을 재사용 가능한 방식으로 정의하는 메커니즘입니다.
+
+Entity Reference Node 5
+- 엔티티 참조를 나타냅니다.
+Entity Node 6
+- 일반 엔티티를 나타냅니다.
+Notation Node 12
+- DTD에서 notation 선언을 나타냅니다.
+
+CDATA Section Node 4
+- XML 문서에서만 사용되며, 텍스트 데이터를 문자 그대로 포함할 수 있습니다. CDATA 섹션 내의 텍스트는 파싱되지 않습니다.
+Processing Instruction Node 7
+- XML 문서에서 사용되며, XML 파서에게 특별한 명령을 전달하기 위해 사용됩니다.
+
+
+HTML5는 DTD를 사용하지 않으며, 대신 더 단순하고 직관적인 문서 구조를 채택했습니다. 
+HTML5 문서는 <!DOCTYPE html> 선언으로 시작하며, 이는 HTML5 문서를 HTML 규격으로 파싱하도록 
+브라우저에 지시합니다. DTD가 필요하지 않으므로, 엔티티 관련 노드들도 필요하지 않게 되었습니다.
+
+HTML5에서 엔티티 노드가 사용되지 않는 이유
+DTD가 필요 없음: HTML5 문서는 DTD를 사용하지 않으므로, 엔티티 선언이나 참조를 정의할 필요가 없습니다.
+표준 및 호환성: HTML5는 웹 문서를 더 쉽게 작성하고 호환성을 높이기 위해 설계되었습니다. 엔티티 노드와 같은 복잡한 구조는 현대 웹 개발에서 거의 필요하지 않습니다.
+브라우저 지원: 주요 브라우저들은 HTML5 표준을 따르기 때문에, 엔티티 노드와 관련된 기능을 지원하지 않습니다.

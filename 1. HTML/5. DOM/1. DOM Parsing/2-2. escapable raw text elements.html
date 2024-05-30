@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- 
+텍스트로 보관되지만,
+HTML 엔티티로 이스케이프 처리된 텍스트들은 
+해석됨
+ -->
+    <title>escapable &amp; raw text elements Element - Parsing - DOM | HTML Sample</title>
+</head>   
+<body>
+    <textarea>&lt;div&gt;Hello World!&lt;/div&gt;</textarea>
+
+<!-- 
+<p>도 HTML 엔티니를 해석하지만 
+다른 것은 이 둘은 HTML 요소를 포함할 수 없음.
+-->
+    <p>This <b>is</b> a &amp; example.</p>
+</body>
+</html>

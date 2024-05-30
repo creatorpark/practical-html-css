@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>block vs inline vs inline-block - Sectioning | HTML Sample</title>
+    <style>
+    .block {
+        display: block;
+        width: 200px;
+        height: 100px;
+        background-color: skyblue;
+    }
+
+    .inline {
+        display: inline;
+        background-color: lightgreen;
+    }
+
+    .inline-block {
+        display: inline-block;
+        width: 200px;
+        height: 100px;
+        background-color: lightcoral;
+    }
+    
+    .highlight {
+        color: red;
+    }
+    </style>
+</head>
+    <!-- HTML에서 알아야하는 Display 속성 3가지 -->
+    <!-- 이건 Document로 빼야할 것 같다. -->
+    <!-- Block -->
+    <h1>1. Block</h1>    
+    <h2>Sectioning, p, div, form</h2>
+    <p>
+       Paragraph<br>
+       1. 새로운 줄에 시작<br>
+       2. width, height 설정 가능<br>
+       3. 섹션을 구분 레이아웃 구성할 때<br>
+    </p>
+    <div class="block">This is a block-level element</div>
+    
+    <!-- Inline -->
+    <!-- https://developer.mozilla.org/ko/docs/Glossary/Inline-level_content -->
+    <h1>2. Inline</h1>
+    <h2>span, a, img</h2>
+    <p>
+        1. 다른 요소와 함께 한 줄에 배치<br>
+        2. <span class="highlight">width, height 설정 안됨</span><br>
+    </p>
+    <a href="#"><img src="./section.png"/>링크</a><br> <!-- img는 문서의 일부로 다룬다 -->
+    <span class="inline">This is an inline element</span>
+    <br>
+    
+    <!-- Inline-Block -->
+    <h1>3. Inline-Block</h1>
+    <h2>button, input, video</h2>
+    <p>
+        1. 다른 요소와 함께 한 줄에 배치
+        2. width, height 설정 가능
+    </p>
+    <button type="button">버튼</button>    
+    <form>
+          <input name="search" id="search" placeholder="Search">
+    </form>
+    <div class="inline-block">This is an inline-block element</div>
+    <br>
+    <!-- 
+        display 속성이 변경 안되는 html 요소는? 
+    -->
+</body>
+</html>

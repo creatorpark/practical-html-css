@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form - Forms | HTML Sample</title>
+    <link rel="stylesheet" href="./stylesheet.css">
+</head>
+<body>
+<!-- 지금까지는 서버가 사용자에게 정보를 제공하는 태그(서버 to 사용자)
+     Form은 사용자가 서버에게 정보를 제출하는 태그(사용자 to 서버)
+
+    action api 주소
+    *** GET - Query (조회, 검색)
+    *** POST - Command (Create, Update, Action(login, transfer)...)
+
+    관례적으로 q를 사용.
+    확인한 것은 쿠팡밖에 없음.
+    https://www.tcpschool.com/html-input-types/search
+
+    스펙에는 이름으로 q를 사용하기는 함.
+    https://html.spec.whatwg.org/#attr-form-rel
+
+    https://html.spec.whatwg.org/#linkTypes
+-->
+    <h1>검색 예제</h1>
+    <form action="/search" method="GET">
+        <input type="search" name="q" placeholder="검색어를 입력하세요."/>
+        <button type="submit">Search</button>
+    </form>
+    
+    <br>
+    <h1>제출 예제</h1>
+    <form action="/login" method="POST">
+        <label for="username">사용자 이름:</label>
+        <input type="text" id="username" name="username" required>
+    
+        <label for="password">비밀번호:</label>
+        <input type="password" id="password" name="password" required>
+    
+        <button type="submit">제출</button>
+    </form>
+</body>
+</html>

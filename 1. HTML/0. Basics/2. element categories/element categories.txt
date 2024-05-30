@@ -1,0 +1,42 @@
+Element
+
+Categories
+- Content Model에 속하는 Category를 나타낸다.
+- Categories는 Content Model을 정의 할 때 사용된다.
+-> 이 요소가 어떤 Category로 분류 되는지를 나타내며,
+여기서 Category는 Content Model의 분류 체계를 나타낸다.
+
+Content Model
+- Elements의 자식 및 그 하위 Elements가 올 수 있는 Category를 나타낸다.
+
+Categories(Kind of Content) 
+: Elements의 특징과 기능으로 분류된 기준
+: Element의 Contents에 올 수 있는지를 판단하는 기준이 됨.
+
+- Metadata content
+
+- Flow content - 문서의 흐름대로 배치되는 콘텐츠(meta의 일부를 제외한 대부분은 이 것이다)
+: block 요소
+ - Sectioning content 
+ - Heading content
+
+- Phrasing content
+: 이전에 대부분 Inline level 
+  - Embedded content 
+  - Interactive content
+  - Palpable content
+
+- Script-supporting content 
+
+번외 
+- nothing content
+: 주로 void element가 이에 속한다. self-closing tag 
+
+- transparent content
+: 해당 Elements의 자식으로 올 수 있는 Content Model은 투명해서 
+부모의 것을 투과해서(부모것을 상속해서) 사용한다는 뜻.
+- paragraph
+
+
+https://naradesign.github.io/transparent-content-models.html
+https://velog.io/@parkseonup/HTML-HTML5%EC%97%90-%EC%83%88%EB%A1%AD%EA%B2%8C-%EB%93%B1%EC%9E%A5%ED%95%9C-%EC%BD%98%ED%85%90%EC%B8%A0-%EB%AA%A8%EB%8D%B8-Content-Models

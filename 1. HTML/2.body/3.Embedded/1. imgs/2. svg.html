@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>svg - Embedded | HTML Sample</title>
+   
+</head>
+<body>
+
+<!--
+svg는 여러 해상도에도 괜찮은 이미지 만들기
+SVG를 다루는 방법에 대해 강의를 좀 듣고 요거 문서 업그레이드 하기
+TODO 의도는 img로 만든걸 svg로도 만들 수 있다는 걸 보여줘야됨.
+
+https://ossam5.tistory.com/49
+
+-->
+<h1>picture vs svg</h1>
+<div style="width: 300px; height: 300px;">
+    <svg viewBox="0 0 100 100">
+        <rect x="0" y="0" width="100" height="100" />
+    </svg>
+</div>
+<hr>
+<picture>
+    <source srcset="./small.jpg" media="(max-width: 600px)">
+    <img src="./medium.jpg" alt="고양이와 친구들">
+</picture>  
+
+</body>
+</html>

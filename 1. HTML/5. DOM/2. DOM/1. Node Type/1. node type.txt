@@ -1,0 +1,14 @@
+https://lifeandit.tistory.com/70
+
+
+이와 관련된 예제를 만들고, document tree에서 어떻게 보이는지 확인
+
+Document
+1-1 Document Node 9
+1-2 Document Type Node 10
+
+2-1 Element Node 1
+2-2 Attribute Node 2
+2-3 Text Node 3
+
+2-4 

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>img vs picture - Embedded | HTML Sample</title>
+</head>
+<body style="overflow-x: hidden">
+
+<!--
+1. img는 단일 해상도 지원
+2. picture는 여러 해상도 지원 -> 반응형으로 제작하기 위함.
+Uber 보니까 webp 사용 했더라.
+성능 차이도 많이 난다.
+-->
+
+<h1>The picture element</h1>
+<p>Resize the browser window to load different images.</p>
+
+<picture>
+    <source srcset="./small.jpg" media="(max-width: 400px)">
+    <source srcset="./large.webp" media="(min-width: 600px)">
+    <img src="./medium.jpg" alt="고양이와 친구들">
+</picture>
+  
+</body>
+</html>
