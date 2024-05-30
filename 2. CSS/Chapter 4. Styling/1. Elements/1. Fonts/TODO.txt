@@ -1,0 +1,10 @@
+
+
+https://developer.mozilla.org/en-US/docs/Learn/CSS/Styling_text/Fundamentals
+
+Font Properites
+https://tutorial.techaltum.com/cssfontproperties.html
+
+
+FONT 크기를 사용 할 때 반응성을 유지하기 위해 어떻게 해야할까?
+https://dev.to/marcelluscaio/using-rem-doesnt-make-your-website-responsive-heres-why-4b0e
