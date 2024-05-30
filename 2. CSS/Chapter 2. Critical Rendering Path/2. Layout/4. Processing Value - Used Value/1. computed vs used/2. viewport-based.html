@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viewport Units Example</title>
+    <style>
+        body {
+            font-size: 16px; /* Base font size for comparison */
+            margin: 0;
+        }
+        header {
+            height: 10vh; /* 10% of viewport height */
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            line-height: 10vh; /* Vertically center text */
+            font-size: 2.5vh; /* Relative to viewport height */
+        }
+        main {
+            padding: 2vw; /* 2% of viewport width */
+            font-size: 1.5vh; /* Relative to viewport height */
+        }
+        footer {
+            height: 6vh; /* 6% of viewport height */
+            background-color: #333;
+            color: white;
+            text-align: center;
+            line-height: 6vh; /* Vertically center text */
+            font-size: 1.75vh; /* Relative to viewport height */
+        }
+        .box {
+            width: 30vw;
+            height: 20vh;
+            margin: 2vw;
+            background-color: #f4f4f4;
+            animation: move 3s infinite alternate;
+        }
+        @keyframes move {
+            from {
+                transform: translateX(0);
+            }
+            to {
+                transform: translateX(10vw);
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        Header Section
+    </header>
+    <main>
+        <p>Main content goes here. This paragraph is using <code>vh</code> and <code>vw</code> units.</p>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </main>
+    <footer>
+        Footer Section
+    </footer>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Example</title>
+    <style>
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .block {
+            width: 100%;
+            background-color: lightblue;
+            padding: 10px;
+        }
+        .inline-block {
+            flex: 0 1 200px;
+            background-color: lightcoral;
+            height: 100px;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="block">Block Element</div>
+        <div class="inline-block">Inline-Block Element</div>
+        <div class="inline-block">Inline-Block Element</div>
+        <div class="inline-block">Inline-Block Element</div>
+    </div>
+</body>
+</html>

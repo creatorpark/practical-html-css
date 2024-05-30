@@ -1,0 +1,27 @@
+body {
+    font-size: 1vw;
+  }
+  
+  header {
+    height: 5vh;
+    background-color: #f0f0f0;
+  }
+  
+  h1 {
+    font-size: 3vw;
+    margin-bottom: 1vh;
+  }
+  
+  p {
+    font-size: 1vw;
+    line-height: 1.5;
+    margin-bottom: 0.5vh;
+  }
+  
+  footer {
+    height: 3vh;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 0.5vw;
+  }
