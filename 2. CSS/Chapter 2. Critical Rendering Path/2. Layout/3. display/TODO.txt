@@ -1,0 +1,2 @@
+1.  diplay 속성에 따라 Box Model이 차지하는 공간이 달라진다.
+- Block, Inline, Inline Block의 자간, 여백 등이 어떻게 달라지는지 정리해야됨.
