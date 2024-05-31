@@ -1,3 +1,6 @@
+
+
+마진 소개 한국 글
 https://velog.io/@raram2/CSS-%EB%A7%88%EC%A7%84-%EC%83%81%EC%87%84Margin-collapsing-%EC%9B%90%EB%A6%AC-%EC%99%84%EB%B2%BD-%EC%9D%B4%ED%95%B4
 
 https://medium.com/theleanprogrammer/mastering-margin-collapsing-css-16ee592cd920
