@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pseudo Classes - Replaced Elements | CSS Sample</title>
+  <style>
+    img {
+      display: block;
+    }
+
+
+    .box {
+      background-color: red;
+    }
+
+    img:hover {
+      background-color: yellow;
+    }
+
+    .hover_box {
+      background-color: orange;
+    }
+
+    .hover_box:hover {
+      background-color: blue;
+    }
+
+    .img_box {
+      width: 200px;
+      height: 200px;
+    }
+  </style>
+</head>
+<body>
+  <div class="box">
+    <img src="./cats.webp" alt="Cats" class="img_box">
+  </div>
+  <div class="hover_box">
+    <img src="./cats.webp" alt="Cats" class="img_box">
+  </div>
+
+</body>
+</html>

@@ -1,4 +1,5 @@
-
+Font 관련 Base부터 등등 정보가 다른데 영향이 있기 때문에
+미리 공부를 하는 쪽으로 선회
 
 https://developer.mozilla.org/en-US/docs/Learn/CSS/Styling_text/Fundamentals
 

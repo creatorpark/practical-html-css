@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pseudo Elements - Replaced Elements | CSS Sample</title>
+  <style>
+    img::before {
+      content: "이미지 앞에 텍스트는 기본적으로 안됨";
+    }
+
+    .container::before {
+      content: "컨테이너를 만든 뒤 해야 합니다";
+    }
+
+    .img_box {
+      width: 200px;
+      height: 200px;
+    }
+  </style>
+</head>
+<body>
+  <img src="./cats.webp" alt="Cats" class="img_box">
+
+  <div class="container">
+    <img src="./cats.webp" alt="Cats" class="img_box">
+  </div>  
+</body>
+</html>

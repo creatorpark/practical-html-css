@@ -1,0 +1,11 @@
+1. Pseudo classes
+이미지를 했을 때 hover 같은 경우 적용되지 않는다.
+그래서 한번 더 wrapping해서 거기에 입힌다.
+
+2. replaced element는 자체 콘텐츠를 가지고 있으며, 기본적으로 display: inline으로 취급된다.
+그래서, inline은 기본적으로 Font base 기준으로 하기 때문에
+이 위에서부터 이미지가 보이는 현상이다.
+
+이를 위해서는 img 요소를 블록 요소로 변경
+
+최적화 기법 짱임.ㅋㅋㅋ
