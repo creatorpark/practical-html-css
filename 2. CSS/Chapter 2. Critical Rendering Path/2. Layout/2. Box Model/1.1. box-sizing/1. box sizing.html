@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Sizing - Box Model | Sample CSS</title>
+    <style>
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        flex-direction: column;
+    }        
+    .box {
+        width: 200px;
+        margin-bottom: 20px;
+    }
+
+    .box__border {
+        border: 25px solid black;
+    }
+
+    .box__padding {
+        padding: 25px;
+    }
+
+    .content {
+        box-sizing: content-box;
+        background-color: lightblue;
+    }
+
+    .border {
+        box-sizing: border-box;
+        background-color: lightgreen;
+    }
+    </style>
+</head>
+<body>
+    <section class="container">
+        <h2>NORMAL</h2>
+        <div class="content box">CONTENT BOX</div>
+        <div class="border box">BORDER BOX</div>
+    </section>
+
+    <section class="container">
+        <h2>BORDER</h2>
+        <div class="content box box__border">CONTENT BOX</div>
+        <div class="border box box__border">BORDER BOX</div>
+    </section>
+
+    <section class="container">
+        <h2>PADDING</h2>
+        <div class="content box box__padding">CONTENT BOX</div>
+        <div class="border box box__padding">BORDER BOX</div>
+    </section>
+
+    <section class="container">
+        <h2>BORDER, PADDING</h2>
+        <div class="content box box__border box__padding">CONTENT BOX</div>
+        <div class="border box box__border box__padding">BORDER BOX</div>
+    </section>    
+</body>
+</html>
+
+
