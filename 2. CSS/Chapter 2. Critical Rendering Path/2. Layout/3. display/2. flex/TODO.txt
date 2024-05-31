@@ -1,0 +1,8 @@
+
+
+1. flex vs (block(column) vs inline(row))
+
+
+
+1. flex vs flutter flex 
+이건 나중에

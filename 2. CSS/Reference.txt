@@ -1,0 +1,11 @@
+최신 Layout 기술 (Flex 와 Grid)
+아래는 강좌에 대한 소개고. 위의 글 3개는 이 강좌를 위한 배경 지식을 나누는 글이다.
+https://juejin.cn/book/7161370789680250917?suid=1908407916041614&scrollMenuIndex=1
+
+처음으로 중국에서도 엄청난 개발자가 있다는 사실을 발견.ㅋㅋㅋ
+
+아래 글은 이사람이 쓴 posts을 볼 수 있는 리스트
+https://juejin.cn/user/1908407916041614/posts
+
+아래는 이사람의 medium 링크
+https://w3cplus.medium.com/
