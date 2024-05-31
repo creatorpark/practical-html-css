@@ -1,0 +1,26 @@
+
+
+1. link 언어 예제 만들기 어떻게 반응하는지 궁금하다.
+
+<link data-rh="true" rel="alternate" hreflang="en-kr" href="https://www.uber.com/kr/en/about/">
+
+
+Uber
+- data-baseweb
+- noscript
+
+Script
+- module-preload
+- async
+- integrity
+- crossorigin
+
+link
+<link rel="modulepreload" href="https://d3i4yxtzktqr9n.cloudfront.net/uber-sites/client-main-500ac98d801468db.js" nonce="" integrity="sha384-Legj6lzvM07sWtc5UQQVCwapr11bNfV3H79WG1f16dLyp9ayihHX7dgtF0pdl6SJ" crossorigin="anonymous" as="script">
+
+style hydate
+<style class="_styletron_hydrate_" data-hydrate="</style>
+
+<meta data-rh="true" name="viewport" content="width=device-width, initial-scale=1">
+
+<link data-rh="true" rel="alternate" hreflang="en-kr" href="https://www.uber.com/kr/en/about/">

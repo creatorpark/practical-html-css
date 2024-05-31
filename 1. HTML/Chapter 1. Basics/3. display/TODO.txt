@@ -1,0 +1,4 @@
+가로축 (inline) row-direction, horizontal
+세로축 (block) column-direction, vertical
+
+중국애 글이 이정도에서는 훌룡 할 듯

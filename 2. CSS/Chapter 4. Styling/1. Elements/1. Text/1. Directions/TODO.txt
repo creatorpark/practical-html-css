@@ -1,0 +1,19 @@
+
+
+Handling differnet text directions
+https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Handling_different_text_directions
+
+여기서 만들 예제.
+
+1. block, inline의 text Direction에 따른 배치 방향
+
+2. flex의 배치 방향 설정 하는법
+- 이게 text-direction이 자동으로 바뀌는지 아니면
+- 두개를 독립적으로 설정 할 수 있는 것인지?
+
+3. 그렇다면 text-direction은 실제 이전 block, inline에서만 사용하는 것인지
+
+
+Text의 쓰기 모드에 따라 Layout의 방향이 바뀐다.
+Flutter의 Flex Layout도 이 것에 영향을 받는다.
+
