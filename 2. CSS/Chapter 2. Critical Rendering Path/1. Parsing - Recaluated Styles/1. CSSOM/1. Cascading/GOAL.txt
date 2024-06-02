@@ -4,3 +4,5 @@
 - 개념 이해
 - 기초 세팅(init-css)
 
+CSS Specificity는 CSSOM 만들 때 반영 된다는 것을 이 글에서 확인
+https://dev.to/anewman15/what-is-css-selector-specificity-and-how-does-it-work-1dba

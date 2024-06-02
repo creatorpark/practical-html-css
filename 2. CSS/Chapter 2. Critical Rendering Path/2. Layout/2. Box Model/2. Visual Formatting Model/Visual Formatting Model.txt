@@ -1,3 +1,74 @@
 Visual Formatting Model
-https://juejin.cn/post/7327835500013682751
+https://w3cplus.medium.com/css-key-concepts-visual-formatting-model-716a4d885c17
+
+
+Visual Formatting Model
+- 요소들을 Box들로 변환하는 규칙 모음.
+- 요소 TO Box
+
+1. Basics
+1.Viewport
+- screen
+2.Containing blocks
+
+
+2. box Generations
+- Block-level elements 
+ - block boxes
+ - anonymous block boxes
+- inline-level elements
+ - inline boxes 
+ - anonymous inline boxes
+
+3. Positioning schemes
+- position
+
+4. Normal Flow
+- Block formatting contexts
+- Inline formatting contexts
+- Relative positioning 
+
+5. Floats
+- float 
+
+6. Absolute positioning 
+- fixed position 
+
+7. relationships between display, position, float 
+
+8. Comparision of normal flow, floats and absolute positioning
+- normal flow
+- relative positioning
+- floating a box 
+- absolute positioning 
+
+9. Layered presentation
+- z-index 
+
+10. text direction 
+
+
+1. Box Size
+- 
+
+2. Box Type
+- inline
+- inline-level
+- automic inline-level
+- block
+
+
+3. Positining Schema
+- Normal Flow
+- Floating Flow 
+- Absolute Positining
+
+4. Containing block
+- child, sibiling of elements of the current Box
+
+5. windows size and position
+
+6. the size of the includeded images
+
+
 
