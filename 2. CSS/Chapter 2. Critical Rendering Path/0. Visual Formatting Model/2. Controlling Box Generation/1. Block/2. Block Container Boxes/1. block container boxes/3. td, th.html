@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TD, TH - Block Container Boxes - Block | Sample CSS </title>
+    <style>
+      table {
+        width: 100%;
+        border-collapse: collapse;
+      }
+      td, th {
+        border: 1px solid black;
+        padding: 10px;
+      }
+      .block-content {
+        border: 1px solid blue;
+        padding: 5px;
+      }
+    </style>
+</head>
+<body>
+  <table>
+    <tr>
+      <th>Header 1</th>
+      <th>Header 2</th>
+    </tr>
+    <tr>
+      <td>
+        <div class="block-content">
+          This is a div inside a table cell.
+        </div>
+      </td>
+      <td>
+        <div class="block-content">
+          Another div inside a table cell.
+        </div>
+      </td>
+    </tr>
+  </table>
+</body>
+</html>

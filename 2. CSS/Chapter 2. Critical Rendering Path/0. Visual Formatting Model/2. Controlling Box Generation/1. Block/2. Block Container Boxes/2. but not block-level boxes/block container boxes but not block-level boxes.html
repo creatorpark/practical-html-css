@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>but not block-level boxes - Block Container Boxes - Block | Sample CSS </title>
+    <style>
+      .inline-block, td {
+        border: 1px solid green;
+        margin-bottom: 10px;
+        padding: 10px;
+      }
+    </style>
+</head>
+<body>
+  <span class="inline-block" style="display: inline-block;">
+    This span is a block container but not a block-level box with 'display: inline-block'.
+  </span>
+  <table>
+    <tr>
+      <td>This table cell is a block container but not a block-level box.</td>
+    </tr>
+  </table>
+</body>
+</html>

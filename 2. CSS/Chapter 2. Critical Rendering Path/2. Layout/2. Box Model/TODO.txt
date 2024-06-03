@@ -1,3 +1,6 @@
+CSS Box 3 Spec 
+https://www.w3.org/TR/css-box-3/
+
 1. Box Model이란? 
 요소가 갖는 기본 적인 공간..?
 이거 정의 찾기.

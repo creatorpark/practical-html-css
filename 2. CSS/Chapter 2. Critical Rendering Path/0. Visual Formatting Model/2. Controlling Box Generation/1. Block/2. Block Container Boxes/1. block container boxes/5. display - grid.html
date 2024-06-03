@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid - Block Container Boxes - Block | Sample CSS </title>
+    <style>
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+      border: 1px solid purple;
+      padding: 10px;
+    }
+    .grid-item {
+      border: 1px solid black;
+      padding: 10px;
+    }
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="grid-item">Grid item 1</div>
+        <div class="grid-item">Grid item 2</div>
+        <div class="grid-item">Grid item 3</div>
+    </div>
+</body>
+</html>
