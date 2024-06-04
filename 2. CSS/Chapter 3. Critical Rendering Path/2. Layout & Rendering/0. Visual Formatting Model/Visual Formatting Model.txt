@@ -1,16 +1,15 @@
-Visual Formatting Model
+Visual Formatting Model 
+https://www.w3.org/TR/CSS22/visuren.html#run-in
+
 https://w3cplus.medium.com/css-key-concepts-visual-formatting-model-716a4d885c17
 
+https://developer.mozilla.org/en-US/docs/Web/CSS/Visual_formatting_model
 
-Visual Formatting Model
-- 요소들을 Box들로 변환하는 규칙 모음.
-- 요소 TO Box
 
 1. Basics
-1.Viewport
-- screen
-2.Containing blocks
-
+- Viewport
+ - screen
+- Containing blocks
 
 2. box Generations
 - Block-level elements 
@@ -21,7 +20,9 @@ Visual Formatting Model
  - anonymous inline boxes
 
 3. Positioning schemes
-- position
+- Normal Flow
+- Floating Flow 
+- Absolute Positining
 
 4. Normal Flow
 - Block formatting contexts
@@ -48,27 +49,7 @@ Visual Formatting Model
 10. text direction 
 
 
-1. Box Size
-- 
-
-2. Box Type
-- inline
-- inline-level
-- automic inline-level
-- block
-
-
-3. Positining Schema
-- Normal Flow
-- Floating Flow 
-- Absolute Positining
-
-4. Containing block
-- child, sibiling of elements of the current Box
-
-5. windows size and position
-
-6. the size of the includeded images
-
-
-
+---
+Visual Formatting Model
+- 요소들을 Box들로 변환하는 규칙 모음.
+- 요소 TO Box
