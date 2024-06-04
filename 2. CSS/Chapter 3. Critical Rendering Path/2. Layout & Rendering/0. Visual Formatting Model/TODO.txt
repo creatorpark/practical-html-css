@@ -1,0 +1,8 @@
+Visual Formatting Model 
+https://www.w3.org/TR/CSS22/visuren.html#run-in
+
+https://w3cplus.medium.com/css-key-concepts-visual-formatting-model-716a4d885c17
+
+https://developer.mozilla.org/en-US/docs/Web/CSS/Visual_formatting_model
+
+

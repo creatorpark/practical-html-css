@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>inline-table - Inline-level Elements - Inline | Sample CSS </title>
+    <style>
+    * {
+    margin: 0;
+    box-sizing: border-box;
+    }
+
+    ul {
+    margin: 20px;
+        li {
+            display: inline-table;
+            width: 200px;
+            height: 100px;
+            border: 1px solid #ccc;
+            text-align: center;
+            table-layout: fixed;
+            list-style-type: none;
+            
+            span {
+                display: table-cell;
+                vertical-align: middle;
+            }
+        }
+    }
+    </style>
+</head>
+<body>
+    <ul>
+        <li>
+          <span>item1</span>
+        </li>
+        <li>
+          <span>item2</span>
+        </li>
+        <li>
+          <span>item3</span>
+        </li>
+    </ul>
+</body>
+</html>
