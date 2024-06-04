@@ -1,3 +1,6 @@
+SPEC
+https://www.w3.org/TR/css-flexbox-1/
+
 
 Why Flexbox?
 floats, positioning은 있었지만, 이건 너무 불편하다.
@@ -8,3 +11,5 @@ https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox
 
 float이 as
 이전에 assmetric Design을
+
+https://dev-syhy.tistory.com/30

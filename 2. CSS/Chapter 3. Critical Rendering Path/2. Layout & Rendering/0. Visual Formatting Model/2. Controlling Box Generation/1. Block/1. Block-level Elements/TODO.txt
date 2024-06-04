@@ -22,9 +22,12 @@ diplay - block(<p>....), list-item(<li>), table(<table>)
 non-replaced elements & display - 'block', 'list-item', 'inline-block'
 
 3. block container boxes but not block-level boxes
-- non-replaced inline blocks, non-replaced table cells
+- non-replaced inline blocks
+- non-replaced table cells
 
-4. block-boxes 
+4. block-level boxes but no block container boxes
+
+5. block-boxes 
 - block-level boxes & block containers
 
 
