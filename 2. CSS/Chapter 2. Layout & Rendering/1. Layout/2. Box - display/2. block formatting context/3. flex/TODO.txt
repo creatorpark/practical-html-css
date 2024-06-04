@@ -1,1 +1,10 @@
-https://www.w3schools.com/cssref/playdemo.php?filename=playcss_display
+
+Why Flexbox?
+floats, positioning은 있었지만, 이건 너무 불편하다.
+이를 통해 레이아웃을 잡는건 legacy
+그러나 position은 아직도 배치를 위해 많이 사용함.
+https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox
+
+
+float이 as
+이전에 assmetric Design을
