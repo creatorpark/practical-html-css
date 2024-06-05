@@ -1,1 +1,13 @@
 https://www.w3schools.com/cssref/playdemo.php?filename=playcss_display
+
+구현중인 Spec
+https://www.w3.org/TR/css-tables-3/
+
+구현된 Spec
+https://www.w3.org/TR/CSS2/tables.html
+
+
+여기 block-elements 라고 나옴
+inline인 경우 inline-element 라고 나오고
+
+구현되지 않은 Table Spec
