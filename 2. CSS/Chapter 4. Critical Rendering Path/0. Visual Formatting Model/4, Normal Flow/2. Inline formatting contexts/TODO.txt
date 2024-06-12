@@ -1,0 +1,5 @@
+formatting context
+- Block Formatting Contexts
+- inline block formatting Contexts
+https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_flow_layout/Block_and_inline_layout_in_normal_flow
+

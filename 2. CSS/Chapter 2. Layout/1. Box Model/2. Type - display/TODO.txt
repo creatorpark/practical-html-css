@@ -10,7 +10,5 @@ https://hacks.mozilla.org/2019/10/the-two-value-syntax-of-the-css-display-proper
 중국 Display
 https://juejin.cn/post/7331070699899387942
 
-formatting context
-- Block Formatting Contexts
-- inline block formatting Contexts
-https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_flow_layout/Block_and_inline_layout_in_normal_flow
+Display 예제
+https://www.w3schools.com/cssref/playdemo.php?filename=playcss_display

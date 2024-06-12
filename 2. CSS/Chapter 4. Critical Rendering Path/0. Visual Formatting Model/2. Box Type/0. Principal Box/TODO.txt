@@ -1,0 +1,25 @@
+Principal Box
+
+https://www.w3.org/TR/CSS22/visuren.html
+
+https://w3cplus.medium.com/css-key-concepts-visual-formatting-model-716a4d885c17
+
+
+ Principal box
+ - 주로 하나의 요소가 여러 박스 모델을 가질 때, 
+ 그 중에서 주로 렌더링되는 박스를 명확히 하기 위해 사용됩니다. 
+ 이는 요소가 여러 박스를 생성할 때, 각 박스의 역할과 위치를 명확히 하기 위한 것입니다.
+
+ list-item
+ table
+ ruby, rt, rp
+
+ 보면, 일반적인 흐름에서 rendering 되는 요소가 더 추가 되었네...
+
+ The value of the CSS display property will cause elements 
+ in the document to generate a Principal Box 
+ to contain descendant boxes and content, 
+ and it is also a box participating in the positioning scheme. 
+ Some elements may generate additional boxes in addition to the main box.
+ For example, setting the display value to the list-item element.
+ The placement of these additional boxes is related to the main box.
