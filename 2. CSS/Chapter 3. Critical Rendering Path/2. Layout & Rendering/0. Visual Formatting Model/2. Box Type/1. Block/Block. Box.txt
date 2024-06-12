@@ -1,12 +1,21 @@
+CSS 2.2 Spec
+https://www.w3.org/TR/CSS22/visuren.html#box-gen
+
+
 In CSS 2.2, a block-level box is also a block container box 
 unless it is a table box or the principal box of a replaced element. 
+CSS 2.2에서 
+블록 수준 상자는 
+테이블 상자나 대체된 요소의 주요 상자가 아닌 한 블록 컨테이너 상자이기도 합니다.
+
 A block container box either contains only block-level boxes 
 or establishes an inline formatting context and thus contains only inline-level boxes. 
-CSS 2.2에서 블록 수준 상자는 테이블 상자나 대체된 요소의 주요 상자가 아닌 한 블록 컨테이너 상자이기도 합니다.
-블록 컨테이너 상자는 블록 수준 상자만 포함하거나 인라인 서식 지정 컨텍스트를 설정하여 인라인 수준 상자 만 포함합니다.
+블록 컨테이너 상자는 
+블록 수준 상자만 포함하거나 인라인 서식 지정 컨텍스트를 설정하여 인라인 수준 상자 만 포함합니다.
 주요 상자가 블록 컨테이너 상자인 요소는 블록 컨테이너 요소입니다.
 
-Values of the 'display' property which make a non-replaced element generate a block container include 'block', 'list-item' and 'inline-block'. 
+Values of the 'display' property which make a non-replaced element generate a block container 
+include 'block', 'list-item' and 'inline-block'. 
 대체되지 않은 요소가 블록 컨테이너를 생성하도록 하는 'display' 속성
 
 Not all block container boxes are block-level boxes
@@ -14,36 +23,43 @@ Not all block container boxes are block-level boxes
 Block-level boxes that are also block containers are called block boxes.
 대체되지 않은 인라인 블록과 대체되지 않은 테이블 셀은 블록 컨테이너이지만 블록 수준은 아닙니다.
 블록 컨테이너이기도 한 블록 수준 상자를 블록 상자 라고 합니다.
+-------------------------------------------------------------------------
+위 글을 정리하기 위해 참조하는 글
+https://w3cplus.medium.com/css-key-concepts-visual-formatting-model-716a4d885c17
 
-1. block-level elements : 시각적으로 Block Box를 생성하는 요소 
-diplay - block(<p>....), list-item(<li>), table(<table>)
+
+
+1. block-level elements : 시각적으로 Block-Level Box를 생성하는 요소 
+- diplay - block(<p>....), list-item(<li>), table(<table>)
+
+2. Block-level boxes
+- describe the behavior between elements and their parent and sibling elements
+- display : block, list-item, table, flex, grid
+- 요소의 부모 및 그 자식 요소와의 관계 
+- 새로운 줄에 시작하고 주변 요소와 독립적인 블록으로 표시됩니다.
 
 2. block container boxes : block formatting context에 참여하는 Box
 non-replaced elements & display - 'block', 'list-item', 'inline-block'
+- describe the behavior between elements and their descendants.
+- 요소와 그 자식 요소와의 관계
+- Block-level Boxes를 하위 요소로 포함
+- 이 하위 요소들은 block container boxes 안에서 포맷팅
 
 3. block container boxes but not block-level boxes
 - non-replaced inline blocks
 - non-replaced table cells
 
 4. block-level boxes but no block container boxes
+- table
+- non-replacement inline blocks
+- non-replacement table cells
 
 5. block-boxes 
 - block-level boxes & block containers
 
 
-
-Block-level Elements는 웹 페이지에서 다음과 같은 특징을 가집니다:
-
-- 새 줄에서 시작: 블록 레벨 요소는 항상 새 줄에서 시작하며, 화면의 전체 너비를 차지합니다.
-- 다른 블록 레벨 요소 아래에 배치: 다른 블록 레벨 요소 위나 아래에 배치됩니다.
-- 전체 너비 차지: 기본적으로 부모 요소의 전체 너비를 차지합니다.
-- 블록 컨테이너 역할: 대부분의 블록 레벨 요소는 블록 컨테이너이기도 합니다. 
-   블록 레벨 요소 안에 다른 블록 레벨 요소나 인라인 요소를 포함할 수 있습니다.
-
-
 질문 1. 기본적으로 부모 요소의 전체 너비라는건 context 기준이다. 그치?
 질문 2. 블록 컨테이너의 역할이란?
-
 
 질문 3. display 2 properties 글 보고, 
 flex, grid도 살펴 보자.

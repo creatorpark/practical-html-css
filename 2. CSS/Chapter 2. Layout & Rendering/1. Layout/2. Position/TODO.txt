@@ -1,2 +1,10 @@
 Positining
 https://www.w3schools.com/css/css_positioning.asp
+
+
+문서의 흐름, 포지셔닝
+대체요소, 비대체 요소
+https://juejin.cn/post/7323771067877163058
+
+https://www.w3.org/TR/CSS22/visuren.html#box-gen
+

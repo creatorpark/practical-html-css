@@ -36,13 +36,19 @@ Box Model Spec 3 기준
 https://www.w3.org/TR/css-box-3/
 
 
-위 내용이 여기 까지 정리한 것.
-
+-------------------------------------
 아래 내용이 더 깊게 이해하게 되는 부분.
 inline-block Elements
 - inline-block은 inline을 메인으로 취급한다...
+이 때 등장하는게 
+- Block formatting context
+- Inline formatting context
+
+
+문서의 흐름, 포지셔닝 단순 정리
 https://juejin.cn/post/7323771067877163058
 
-여기서 주로 뭐로 취급 되는가를 설명하는 글들을 정리해야 한다. main 취급과 추가 속성을 얻는 개념이다.
-Block formatting context
-Inline formatting context 같은 개념
+
+다음에 대체 요소, 비대체 요소 등과 같이 다룬다.
+
+이 부분은 어디에 둬야 할 까.

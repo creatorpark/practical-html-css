@@ -6,29 +6,6 @@ https://w3cplus.medium.com/css-key-concepts-visual-formatting-model-716a4d885c17
 https://developer.mozilla.org/en-US/docs/Web/CSS/Visual_formatting_model
 
 
-1. Block-level Elements는 Block-level Boxes를 만든다.
-
-Block-level boxes
-- describe the behavior between elements and their parent and sibling elements
-- display : block, list-item, table, flex, grid
-- 요소의 부모 및 그 자식 요소와의 관계 
-- 새로운 줄에 시작하고 주변 요소와 독립적인 블록으로 표시됩니다.
-
-block container boxes
-- describe the behavior between elements and their descendants.
-- 요소와 그 자식 요소와의 관계
-- Block-level Boxes를 하위 요소로 포함
-- 이 하위 요소들은 block container boxes 안에서 포맷팅
-- 
-block-level boxes지만 block container boxes가 아닌 경우.
-- table
-- non-replacement inline blocks
-- non-replacement table cells
-
-block container boxes지만 block-level boxes가 아닌 경우.
-
-
-
 1. Basics
 - Viewport
  - screen
