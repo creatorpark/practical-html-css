@@ -11,12 +11,12 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/Visual_formatting_model
 Block-level boxes
 - describe the behavior between elements and their parent and sibling elements
 - display : block, list-item, table, flex, grid
-- 부모 요소와 자식 요소 간의 관계 
+- 요소의 부모 및 그 자식 요소와의 관계 
 - 새로운 줄에 시작하고 주변 요소와 독립적인 블록으로 표시됩니다.
 
 block container boxes
 - describe the behavior between elements and their descendants.
-- 요소와 그 자식 요소 간의 관계
+- 요소와 그 자식 요소와의 관계
 - Block-level Boxes를 하위 요소로 포함
 - 이 하위 요소들은 block container boxes 안에서 포맷팅
 - 
