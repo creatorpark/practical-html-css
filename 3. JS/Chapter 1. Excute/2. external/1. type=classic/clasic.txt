@@ -1,0 +1,3 @@
+script에 아무것도 지정하지 않으면 script type=class 과 같다.
+
+This is because text/javascript has been the default script
