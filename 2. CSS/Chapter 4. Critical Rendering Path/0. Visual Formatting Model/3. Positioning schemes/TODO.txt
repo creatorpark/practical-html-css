@@ -1,0 +1,13 @@
+
+https://www.w3.org/TR/css-position-3/#positioning-scheme
+
+stiky가 css 2.2에는 없어서 찾아봄
+stiky 위주로 해서 정리
+
+위 문서를 기준으로 Positition 정리
+
+지금 문서 작성 기준이 CSS 2.2 기준으로 하니까 새로 추가된 개념을 담지 못했다.
+
+그러므로 2.2를 기준으로 살펴보되 3에서 어떻게 변경 되었는지 개념을 잡아야 한다.
+https://www.w3.org/TR/css-display-3/#formatting-context
+
