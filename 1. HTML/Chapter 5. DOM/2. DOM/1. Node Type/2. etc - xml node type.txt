@@ -4,7 +4,6 @@ XML DTD(Document Type Definition)와 관련된 개념으로,
 HTML5에서는 거의 사용되지 않습니다. 
 그 이유는 HTML5에서 DTD를 사용하지 않기 때문입니다.
 
-
 XML과 DTD
 : XML에서는 문서의 구조를 정의하기 위해 DTD를 사용합니다. 
 DTD는 문서에서 사용할 수 있는 요소, 속성, 엔티티 등을 정의합니다. 
