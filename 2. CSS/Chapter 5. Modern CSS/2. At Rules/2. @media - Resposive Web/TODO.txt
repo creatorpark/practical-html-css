@@ -1,3 +1,14 @@
 Media Query 작성 패턴을 
 Udemy CSS 강의 듣고 패턴을 정리한다.
 중국애 자료도 좋고
+
+
+
+
+설명: Modern CSS에서는 화면 크기에 따라 글꼴 크기와 레이아웃이 유연하게 변화해야 합니다. 이러한 개념을 이해하고 구현하는 것이 중요합니다.
+세부 항목:
+Fluid Typography
+Viewport-Relative Units (vw, vh, vmin, vmax)
+Clamp() 함수로 유연한 크기 설정
+Container Queries (최신 CSS 기능)
+

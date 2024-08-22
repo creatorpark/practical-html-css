@@ -5,3 +5,5 @@
 1. overflow 위치는 layout인가 paint인가
 페인트 같은데?ㅋㅋㅋ
 
+Layout과 Composite 둘다 쓰인다는데
+
