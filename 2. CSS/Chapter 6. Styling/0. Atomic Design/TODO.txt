@@ -5,4 +5,6 @@ Elements - Atoms
 Groups - Molecules (Elements+)
 Components - Organisms (Elements+, Molecules+)
 Layouts - Templates
-Pages - Pages
+Pages - Rendered Templates
+
+

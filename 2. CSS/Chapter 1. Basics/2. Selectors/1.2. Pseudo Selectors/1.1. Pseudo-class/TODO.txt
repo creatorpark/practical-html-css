@@ -1,3 +1,0 @@
-HTML Spec 문서를 바탕으로 
-자주 쓰는 Pseudo class 예제를 만든다.
-
