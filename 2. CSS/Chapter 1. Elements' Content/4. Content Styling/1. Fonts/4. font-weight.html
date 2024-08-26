@@ -57,12 +57,18 @@
             background-color: #f2f2f2;
         }
     </style>
-    <!-- Google Fonts for Roboto -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap">
+    <!-- Google Fonts for Roboto 
+        로딩 전략 요약:
+        block: 폰트가 로드될 때까지 텍스트를 숨깁니다. 로드가 완료되면 폰트를 표시합니다.
+        swap: 폰트가 로드되기 전에는 시스템 폰트를 사용해 텍스트를 표시하고, 로드되면 웹 폰트로 교체합니다.
+        fallback: 짧은 시간 동안(100ms) 텍스트를 숨기고, 로드가 완료되지 않으면 시스템 폰트를 사용합니다.
+        optional: 가능한 경우에만 웹 폰트를 사용하고, 그렇지 않으면 시스템 폰트로 대체합니다.
+        display=swap은 사용자 경험을 개선하기 위해 자주 사용되며, 폰트가 로드되지 않았을 때도 텍스트가 즉시 표시되도록 합니다. 
+    -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;600;700;800;900&display=swap">
 </head>
 <body>
     <h1>Font Weight Comparison</h1>
-
     <div>
         <table>
             <thead>
