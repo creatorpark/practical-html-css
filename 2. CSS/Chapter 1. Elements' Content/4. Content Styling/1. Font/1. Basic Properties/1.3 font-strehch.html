@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>font-stretch - Basic Properties - Font | Practical CS</title>
+    <style>
+      p {
+        font-family: "Arial", sans-serif;
+      }
+
+      .ultra-condensed {
+          font-stretch: ultra-condensed;
+      }
+
+      .condensed {
+          font-stretch: condensed;
+      }
+
+      .normal {
+          font-stretch: normal;
+      }
+
+      .expanded {
+          font-stretch: expanded;
+      }
+
+      .ultra-expanded {
+          font-stretch: ultra-expanded;
+      }
+  </style>
+</head>
+<body>
+  <h1>Font Stretch</h1>
+
+  <div class="font-selection">
+    <label for="fontSelect">Choose a font:</label>
+    <select id="fontSelect">
+      <option value="Georgia">Georgia (Serif)</option>
+      <option value="Arial" selected>Arial (Sans-serif)</option>
+      <option value="'Courier New', monospace">Courier New (Monospace)</option>
+      <option value="'Comic Sans MS', cursive">Comic Sans MS (Cursive)</option>
+      <option value="Impact, fantasy">Impact (Fantasy)</option>
+    </select>
+  </div>
+
+  <p class="ultra-condensed">AAAAAAAAAA</p>
+  <p class="condensed">AAAAAAAAAA</p>
+  <p class="normal">AAAAAAAAAA</p>
+  <p class="expanded">AAAAAAAAAA</p>
+  <p class="ultra-expanded">AAAAAAAAAA</p>
+
+  <script>
+    const fontSelect = document.getElementById('fontSelect');
+    const paragraphs = document.querySelectorAll('p');
+
+    // Event listener for font selection
+    fontSelect.addEventListener('change', function() {
+        const selectedFont = this.value;
+        paragraphs.forEach(paragraph => {
+            paragraph.style.fontFamily = selectedFont; // Update font-family for all paragraphs
+        });
+    });
+  </script>
+</body>
+</html>

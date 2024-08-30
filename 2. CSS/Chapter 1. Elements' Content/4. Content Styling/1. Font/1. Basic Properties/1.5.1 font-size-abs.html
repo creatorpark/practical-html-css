@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>font-size(Abs) - Basic Properties - Font | Practical CS</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        /* 절대 크기 */
+        .xx-small { font-size: xx-small; }
+        .x-small { font-size: x-small; }
+        .small { font-size: small; }
+        .medium { font-size: medium; } /* 기본값 */
+        .large { font-size: large; }
+        .x-large { font-size: x-large; }
+        .xx-large { font-size: xx-large; }    
+
+        table {
+            width: 60%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        img {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <img src="./spec-font-size-abs.jpg"/>
+    <img src="./spec-font-size-abs-real.jpg"/>
+
+    <hr>
+    <table>
+        <thead>
+            <tr>
+                <th>Heading</th>
+                <th>Absolute Size Values</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>H1 (32px) = H4 * 2</td>
+                <td>xx-large (32px) = medium * 2</td>
+            </tr>
+            <tr>
+                <td>H2 (24px) = H4 * 1.5</td>
+                <td>x-large (24px) = medium * 1.5</td>
+            </tr>
+            <tr>
+                <td>H3 (18.72px) = H4 * 1.17 (guide 1.2)</td>
+                <td>large (18px) = medium * 1.17</td>
+            </tr>
+            <tr>
+                <td>H4 (16px)</td>
+                <td>medium (16px)</td>
+            </tr>
+            <tr>
+                <td>H5 (13.28px) = H4 * 0.83 (guide 0.88)</td>
+                <td>small (13px) = medium * 0.83</td>
+            </tr>
+            <tr>
+                <td>H6 (10.72px) = H4 * 0.67 (guide 0.6)</td>
+                <td>x-small (10px) = medium * 0.67(guide xx-small)</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

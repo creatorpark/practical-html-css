@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>font-size(Relative) - Basic Properties - Font | Practical CS</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        .parent {
+            font-size: 16px; /* 부모 요소의 폰트 크기 */
+        }
+        .larger {
+            font-size: larger; /* 부모 폰트 크기보다 더 큰 크기 */
+        }
+        .smaller {
+            font-size: smaller; /* 부모 폰트 크기보다 더 작은 크기 */
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        부모1 요소 텍스트 (16px)
+        <div class="parent">
+            부모2 요소 텍스트 (16px)
+            <p class="larger">자식 요소 - larger (19.2px)</p>
+            <p class="smaller">자식 요소 - smaller (13.333px)</p>
+        </div>
+    </div>
+</body>
+</html>

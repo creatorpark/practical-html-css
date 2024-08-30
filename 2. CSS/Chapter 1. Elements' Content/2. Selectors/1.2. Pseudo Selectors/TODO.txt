@@ -1,3 +1,0 @@
-Pseudo Class vs Pseudo Elements
-https://www.freecodecamp.org/news/the-difference-between-pseudo-classes-and-elements-in-css/
-

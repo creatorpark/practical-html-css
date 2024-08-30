@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Font - Loading - Font | Practical CSS</title>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+    </style>
+    <!-- 100~900을 적어주지 않으면 제대로 렌더링 되지 않네...ㅋㅋㅋ -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;600;700;800;900">
+</head>
+<body>
+    <h1>Custom Fonts Loading</h1>
+    <div>
+        <table>
+            <thead>
+                <tr>
+                    <th>Font 1 (Arial)</th>
+                    <th>Google Fonts - Roboto</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td style="font-family: Arial; font-weight: 100;">100 or thin</td>
+                    <td style="font-family: Roboto; font-weight: 100;">100 or thin</td>
+                </tr>
+                <tr>
+                    <td style="font-family: Arial; font-weight: 200;">200 or extralight</td>
+                    <td style="font-family: Roboto; font-weight: 200;">200 or extralight</td>
+                </tr>
+                <tr>
+                    <td style="font-family: Arial; font-weight: 300;">300 or light</td>
+                    <td style="font-family: Roboto; font-weight: 300;">300 or light</td>
+                </tr>
+                <tr>
+                    <td style="font-family: Arial; font-weight: 400;">400 or regular</td>
+                    <td style="font-family: Roboto; font-weight: 400;">400 or regular</td>
+                </tr>
+                <tr>
+                    <td style="font-family: Arial; font-weight: 500;">500 or medium</td>
+                    <td style="font-family: Roboto; font-weight: 500;">500 or medium</td>
+                </tr>
+                <tr>
+                    <td style="font-family: Arial; font-weight: 600;">600 or semibold</td>
+                    <td style="font-family: Roboto; font-weight: 600;">600 or semibold</td>
+                </tr>
+                <tr>
+                    <td style="font-family: Arial; font-weight: 700;">700 or bold</td>
+                    <td style="font-family: Roboto; font-weight: 700;">700 or bold</td>
+                </tr>
+                <tr>
+                    <td style="font-family: Arial; font-weight: 800;">800 or extrabold</td>
+                    <td style="font-family: Roboto; font-weight: 800;">800 or extrabold</td>
+                </tr>
+                <tr>
+                    <td style="font-family: Arial; font-weight: 900;">900 or black</td>
+                    <td style="font-family: Roboto; font-weight: 900;">900 or black</td>
+                </tr>
+            </tbody>
+        </table>
+    <div>
+    <div class="font-selection">
+        <label for="fontSelect">Choose a font:</label>
+        <select id="fontSelect">
+            <option value="Arial" selected>Arial</option>
+            <option value="Roboto">Roboto</option>
+        </select>
+    </div>
+
+    <div class="slider-container">
+        <label class="slider-label" for="fontWeightSlider">Adjust Font Weight: <span id="fontWeightValue">400</span></label>
+        <input type="range" id="fontWeightSlider" class="slider" min="100" max="900" step="100" value="400">
+    </div>
+
+    <p class="example-text" id="exampleTextDisplay">The quick brown fox jumps over the lazy dog.<br>한글 문장 테스트</p>
+
+    <script>
+        const slider = document.getElementById('fontWeightSlider');
+        const exampleTextDisplay = document.getElementById('exampleTextDisplay');
+        const valueLabel = document.getElementById('fontWeightValue');
+        const fontSelect = document.getElementById('fontSelect');
+
+        // Set initial font based on selected option
+        let selectedFont = fontSelect.value;
+        updateFont();
+
+        // Event listener for the slider
+        slider.addEventListener('input', function() {
+            const weight = slider.value;
+            exampleTextDisplay.style.fontWeight = weight;
+            valueLabel.textContent = weight;
+        });
+
+        // Event listener for font selection
+        fontSelect.addEventListener('change', function() {
+            selectedFont = this.value;
+            updateFont();
+        });
+
+        // Function to update the font family
+        function updateFont() {
+            exampleTextDisplay.style.fontFamily = selectedFont;
+        }
+    </script>
+</body>
+</html>

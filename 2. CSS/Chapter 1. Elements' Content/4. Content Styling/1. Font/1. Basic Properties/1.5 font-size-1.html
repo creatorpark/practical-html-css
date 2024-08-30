@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>font-size(length-percentage) - Basic Properties - Font | Practical CS</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        .parent {
+            font-size: 40px;
+        }
+
+        .fixed-pixel {
+            font-size: 20px; /* 고정된 크기: 20픽셀 */
+        }
+
+        .relative-em {
+            font-size: 1.5em; /* 부모 요소의 1.5배 */
+        }
+
+        .relative-rem {
+            font-size: 2rem; /* 루트 요소(html)의 2배 */
+        }
+
+        .percentage {
+            font-size: 120%; /* 부모 요소 크기의 120% */
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <p class="fixed-pixel">이 텍스트는 고정된 픽셀 크기(20px)로 설정됩니다.</p>
+        <p class="relative-rem">이 텍스트는 루트 요소(html)의 글꼴 크기의 2배로 설정됩니다.</p>
+        
+        <p class="relative-em">이 텍스트는 부모 요소의 글꼴 크기(1em)의 1.5배로 설정됩니다.</p>        
+        <p class="percentage">이 텍스트는 부모 요소의 글꼴 크기(100%)의 120%로 설정됩니다.</p>
+    </div>
+</body>
+</html>
