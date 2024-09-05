@@ -52,3 +52,7 @@ https://juejin.cn/post/7323771067877163058
 다음에 대체 요소, 비대체 요소 등과 같이 다룬다.
 
 이 부분은 어디에 둬야 할 까.
+
+box dimensions
+https://www.w3.org/TR/CSS22/box.html#box-dimensions
+
