@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pre, Pre-wrap, Break-spaces, Pre-line - white-space - Text | Practical CSS</title>
+    <style>
+        .comparison-section {
+            display: grid;
+            grid-template-columns: 150px 300px 300px 300px 300px 300px;
+            align-items: start;
+            gap: 5px;
+            margin-bottom: 30px;
+        }
+
+        .box {
+            width: 280px;
+            border: 1px solid #ccc;
+            padding: 10px;
+        }
+
+        .pre { white-space: pre; }
+        .pre-wrap { white-space: pre-wrap; }
+        .break-spaces { white-space: break-spaces; }
+        .pre-line { white-space: pre-line; }
+
+        .label {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+<h2>Pre vs Pre-wrap vs Break-spaces vs Pre-line</h2>
+
+<div class="comparison-section">
+    <h3>New Lines</h3>
+    <div class="box">
+        <div class="label">Original Text</div>
+        <pre>
+Multiple     spaces collapse.
+New lines are preserved and may wrap or not.            
+        </pre>
+    </div>
+    <div class="box pre">
+        <div class="label">pre - preserve</div>
+        Multiple     spaces collapse.
+        New lines are preserved and do not wrap.
+    </div>
+    <div class="box pre-wrap">
+        <div class="label">pre-wrap - wrap</div>
+        Multiple     spaces collapse.
+        New lines are preserved and text wraps.
+    </div>
+    <div class="box break-spaces">
+        <div class="label">break-spaces - wrap</div>
+        Multiple     spaces collapse.
+        New lines are preserved and text wraps with spaces preserved.
+    </div>
+    <div class="box pre-line">
+        <div class="label">pre-line - collapse and wrap</div>
+        Multiple spaces collapse.
+        New lines are preserved, but spaces collapse and text wraps.
+    </div>
+</div>
+
+<div class="comparison-section">
+    <h3>Spaces and Tabs</h3>
+    <div class="box">
+        <div class="label">Original Text</div>
+        <pre>
+This is a    tabbed   and    spaced    text example.
+        </pre>
+    </div>
+    <div class="box pre">
+        <div class="label">pre - preserve</div>
+        This is a    tabbed   and    spaced    text example.
+    </div>
+    <div class="box pre-wrap">
+        <div class="label">pre-wrap - wrap</div>
+        This is a    tabbed   and    spaced    text example.
+    </div>
+    <div class="box break-spaces">
+        <div class="label">break-spaces - wrap</div>
+        This is a    tabbed   and    spaced    text example.
+    </div>
+    <div class="box pre-line">
+        <div class="label">pre-line - collapse</div>
+        This is a tabbed and spaced text example.
+    </div>
+</div>
+
+<div class="comparison-section">
+    <h3>Text Wrapping</h3>
+    <div class="box">
+        <div class="label">Original Text</div>
+        <pre>
+This text will wrap when it reaches the edge of the container.
+        </pre>
+    </div>
+    <div class="box pre">
+        <div class="label">pre - no wrap</div>
+        This text will wrap when it reaches the edge of the container.
+    </div>
+    <div class="box pre-wrap">
+        <div class="label">pre-wrap - wrap</div>
+        This text will wrap when it reaches the edge of the container.
+    </div>
+    <div class="box break-spaces">
+        <div class="label">break-spaces - wrap</div>
+        This text will wrap when it reaches the edge of the container.
+    </div>
+    <div class="box pre-line">
+        <div class="label">pre-line - wrap</div>
+        This text will wrap when it reaches the edge of the container.
+    </div>
+</div>
+
+<div class="comparison-section">
+    <h3>End-of-line spaces</h3>
+    <div class="box">
+        <div class="label">Original Text</div>
+        <pre>
+spaces at the end of the line        
+        </pre>
+    </div>
+    <div class="box pre">
+        <div class="label">pre - preserve</div>
+        spaces at the end of the line        
+    </div>
+    <div class="box pre-wrap">
+        <div class="label">pre-wrap - hang</div>
+        spaces at the end of the line        
+    </div>
+    <div class="box break-spaces">
+        <div class="label">break-spaces - wrap</div>
+        spaces at the end of the line        
+    </div>
+    <div class="box pre-line">
+        <div class="label">pre-line - remove</div>
+        spaces at the end of the line        
+    </div>
+</div>
+
+<div class="comparison-section">
+    <h3>End-of-line other space separators</h3>
+    <div class="box">
+        <div class="label">Original Text</div>
+        <pre>
+Text with - 
+separators at the end of the line
+        </pre>
+    </div>
+    <div class="box pre">
+        <div class="label">pre - no wrap</div>
+        Text with - 
+        separators at the end of the line
+    </div>
+    <div class="box pre-wrap">
+        <div class="label">pre-wrap - hang</div>
+        Text with - 
+        separators at the end of the line
+    </div>
+    <div class="box break-spaces">
+        <div class="label">break-spaces - wrap</div>
+        Text with - 
+        separators at the end of the line
+    </div>
+    <div class="box pre-line">
+        <div class="label">pre-line - hang</div>
+        Text with - 
+        separators at the end of the line
+    </div>
+</div>
+
+</body>
+</html>

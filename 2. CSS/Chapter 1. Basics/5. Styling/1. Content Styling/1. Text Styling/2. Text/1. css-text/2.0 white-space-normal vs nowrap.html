@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>normal vs nowrap - white-space - Text | Practical CSS</title>
+    <style>
+        .comparison-section {
+            display: grid;
+            grid-template-columns: 150px 300px 300px 300px;
+            align-items: start;
+            gap: 5px;
+            margin-bottom: 30px;
+        }
+
+        .box {
+            width: 280px;
+            border: 1px solid #ccc;
+            padding: 10px;
+        }
+
+        .normal {
+            white-space: normal;
+        }
+
+        .nowrap {
+            white-space: nowrap;
+        }
+
+        .label {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+<h2>Normal vs Nowrap</h2>
+
+<div class="comparison-section">
+    <h3>New Lines</h3>
+    <div class="box">
+        <div class="label">Original Text</div>
+        <pre>
+Multiple     spaces collapse.
+New lines collapse and text wraps to fit.            
+        </pre>
+    </div>
+    <div class="box normal">
+        <div class="label">normal - collapse</div>
+        Multiple     spaces collapse.
+        New lines collapse and text wraps to fit.
+    </div>
+    <div class="box nowrap">
+        <div class="label">nowrap - collapse</div>
+        Multiple     spaces collapse.
+        New lines collapse, no wrapping occurs.
+    </div>
+</div>
+
+<div class="comparison-section">
+    <h3>Spaces and Tabs</h3>
+    <div class="box">
+        <div class="label">Original Text</div>
+        <pre>
+This is a    tabbed   and    spaced    text example.
+        </pre>
+    </div>
+    <div class="box normal">
+        <div class="label">normal - collapse</div>
+        This is a    tabbed   and    spaced    text example.
+    </div>
+    <div class="box nowrap">
+        <div class="label">nowrap - collapse</div>
+        This is a    tabbed   and    spaced    text example.
+    </div>
+</div>
+
+<div class="comparison-section">
+    <h3>Text Wrapping</h3>
+    <div class="box">
+        <div class="label">Original Text</div>
+        <pre>
+This text will wrap when it reaches the edge of the container.
+        </pre>
+    </div>
+    <div class="box normal">
+        <div class="label">normal - wrap</div>
+        This text will wrap when it reaches the edge of the container.
+    </div>
+    <div class="box nowrap">
+        <div class="label">nowrap - no wrap</div>
+        This text will not wrap, even when it reaches the edge of the container.
+    </div>
+</div>
+
+<div class="comparison-section">
+    <h3>End-of-line : spaces</h3>
+    <div class="box">
+        <div class="label">Original Text</div>
+        <pre>
+spaces at the end of the line        
+        </pre>
+    </div>
+    <div class="box normal">
+        <div class="label">normal - remove</div>
+        spaces at the end of the line        
+    </div>
+    <div class="box nowrap">
+        <div class="label">nowrap - remove</div>
+        spaces at the end of the line        
+    </div>
+</div>
+
+<div class="comparison-section">
+    <h3>End-of-line : other space separators</h3>
+    <div class="box">
+        <div class="label">Original Text</div>
+        <pre>
+Text with - 
+separators at the end of the line
+        </pre>
+    </div>
+    <div class="box normal">
+        <div class="label">normal - hang</div>
+        Text with - 
+        separators at the end of the line
+    </div>
+    <div class="box nowrap">
+        <div class="label">nowrap - hang</div>
+        Text with - 
+        separators at the end of the line
+    </div>
+</div>
+
+</body>
+</html>
