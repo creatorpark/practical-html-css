@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>word-break - Text Wrapping - Text | Practical CSS</title>
+    <style>
+        .box {
+            width: 300px;
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+
+        .label {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .normal { word-break: normal; }
+        .break-all { word-break: break-all; }
+        .keep-all { word-break: keep-all; }
+    </style>
+</head>
+<body>
+
+<h2>Word-break Examples</h2>
+
+<!-- 줄바꿈 1 : word-break: normal -->
+<div class="box normal">
+    <div class="label">word-break: normal</div>
+    This example shows the default behavior. Long words will only break at the natural points, such as spaces, or when they reach the end of the container. 
+    LongURLslikeThisWillNotBreakEvenIfTheyAreTooLongForTheContainer.
+</div>
+
+<!-- Example: break-all with CJK -->
+<div class="box break-all">
+    <div class="label">word-break: break-all (CJK)</div>
+    이 예제는 CJK 텍스트에서 break-all을 적용한 결과를 보여줍니다.
+    긴 문장을 중간에서 줄바꿈합니다: 
+    서울은대한민국의수도이자가장큰도시입니다.역사와문화가깊게배어있는도시로많은관광객이방문합니다.
+</div>
+
+<!-- Example: keep-all with CJK -->
+<div class="box keep-all">
+    <div class="label">word-break: keep-all (CJK)</div>
+    이 예제는 CJK 텍스트에서 keep-all을 적용한 결과를 보여줍니다.
+    단어 사이에서만 줄바꿈이 발생합니다: 
+    서울은대한민국의수도이자가장큰도시입니다.역사와문화가깊게배어있는도시로많은관광객이방문합니다.
+</div>
+
+</body>
+</html>

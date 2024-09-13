@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>normal - Overflow-wrap - Text Wrapping - Text | Practical CSS</title>
+    <style>
+        .box {
+            width: 250px;
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+
+        .label {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .keep-all {
+            overflow-wrap: normal;
+            word-break: keep-all;
+        }
+
+        .word-normal {
+            overflow-wrap: normal;
+            word-break: normal;
+        }
+    </style>
+</head>
+<body>
+
+<h2>overflow-wrap: normal</h2>
+
+<div class="box keep-all">
+    <div class="label">word-break: keep-all</div>
+    서울은대한민국의수도이자가장큰도시입니다.역사와문화가깊게배어있는도시로많은관광객이방문합니다.
+</div>
+
+<div class="box word-normal">
+    <div class="label">word-break: normal</div>
+    서울은대한민국의수도이자가장큰도시입니다.역사와문화가깊게배어있는도시로많은관광객이방문합니다.
+</div>
+
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>word-break - Text Wrapping - Text | Practical CSS</title>
+    <style>
+        .box {
+            width: 400px;
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+
+        .label {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .overflow-n { overflow-wrap: normal; }
+        .overflow-w { overflow-wrap: break-word; }
+        .overflow-a { overflow-wrap: anywhere; }
+
+        .normal { word-break: normal; }
+        .break-all { word-break: break-all; }
+        .keep-all { word-break: keep-all; }
+    </style>
+</head>
+<body>
+
+<h2>Word-break Examples</h2>
+
+<div class="box keep-all">
+    <div class="label">word-break: keep-all</div>
+    This example shows the default behavior. Long words will only break at the natural points, such as spaces, or when they reach the end of the container. 
+    LongURLslikeThisWillNotBreakEvenIfTheyAreTooLongForTheContainer.
+</div>
+
+<div class="box keep-all overflow-n">
+    <div class="label">word-break: keep-all, overflow-wrap : normal</div>
+    This example shows the default behavior. Long words will only break at the natural points, such as spaces, or when they reach the end of the container. 
+    LongURLslikeThisWillNotBreakEvenIfTheyAreTooLongForTheContainer.
+</div>
+
+<div class="box keep-all overflow-w">
+    <div class="label">word-break: keep-all, overflow-wrap : break-word</div>
+    This example shows the default behavior. Long words will only break at the natural points, such as spaces, or when they reach the end of the container. 
+    LongURLslikeThisWillNotBreakEvenIfTheyAreTooLongForTheContainer.
+</div>
+
+<div class="box keep-all overflow-a">
+    <div class="label">word-break: keep-all, overflow-wrap : anywhere</div>
+    This example shows the default behavior. Long words will only break at the natural points, such as spaces, or when they reach the end of the container. 
+    LongURLslikeThisWillNotBreakEvenIfTheyAreTooLongForTheContainer.
+</div>
+
+</body>
+</html>
