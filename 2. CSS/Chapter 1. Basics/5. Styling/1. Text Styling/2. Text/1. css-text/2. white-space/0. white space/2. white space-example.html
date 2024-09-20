@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Example - white-space - Text | Practical CSS</title>
+    <style>
+        .comparison-section {
+            margin-bottom: 30px;
+        }
+
+        .box {
+            width: 280px;
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin: 10px 0;
+            overflow: auto;
+        }
+
+        .normal { 
+            white-space: normal; 
+        }
+
+        .nowrap { 
+            white-space: nowrap; 
+            overflow-x: auto; 
+            display: inline-block;
+            background-color: #007bff;
+            color: white;
+            padding: 8px 12px;
+            text-align: center;
+            border-radius: 5px;
+            cursor: pointer;
+            white-space: nowrap;
+            margin: 5px;
+        }
+
+        .pre { 
+            white-space: pre; 
+            overflow: auto;
+            font-family: monospace;
+            background-color: #f4f4f4;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+
+        .pre-wrap { 
+            white-space: pre-wrap; 
+            overflow-wrap: break-word; 
+            font-family: monospace;
+            background-color: #f4f4f4;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+
+    </style>
+</head>
+<body>
+<h2>Normal, Nowrap, Pre, Pre-wrap</h2>
+
+<!-- Normal Example -->
+<div class="comparison-section">
+    <h3>Normal (Default Behavior)</h3>
+    <div class="box normal">
+        This is normal text handling. Multiple spaces    are collapsed into one, 
+        and the text will automatically wrap when it reaches the edge of the container. 
+        It's perfect for paragraphs of content.
+    </div>
+</div>
+
+<!-- Nowrap Example -->
+<div class="comparison-section">
+    <h3>Nowrap (Button Style)</h3>
+    <div class="nowrap">Click Me - No Wrap</div>
+    <div class="nowrap">Another Long Button Text</div>
+    <div class="nowrap">Menu Item 1</div>
+    <div class="nowrap">Menu Item 2</div>
+</div>
+
+<!-- Pre Example -->
+<div class="comparison-section">
+    <h3>Pre (Preserve Formatting)</h3>
+    <div class="box pre">
+        Preserves formatting, spaces, and new lines exactly as typed.
+        Useful for code blocks, poetry, or any text where layout is critical:
+        
+        function sampleCode() {
+            console.log("This code block preserves indentation and spaces.");
+        }
+    </div>
+</div>
+
+<!-- Pre-wrap Example -->
+<div class="comparison-section">
+    <h3>Pre-wrap (Text Editor Style)</h3>
+    <div class="box pre-wrap">
+        This is a text editor simulation using pre-wrap. 
+        Notice how the line breaks are preserved:
+
+        function sampleCode() {
+            console.log("Preserves all spaces and line breaks while still wrapping text.");
+        }
+
+        Use this style when formatting matters, but you still need the text to fit within 
+        the constraints of your UI.
+    </div>
+</div>
+
+</body>
+</html>

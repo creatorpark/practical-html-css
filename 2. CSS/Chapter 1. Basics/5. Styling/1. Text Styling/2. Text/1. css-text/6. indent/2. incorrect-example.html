@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>incorrect - Text Indent - Text | Practical CSS</title>
+    <style>
+        .incorrect {
+            text-indent: 300px;
+            border: 1px solid red;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<h2>Incorrect Example (Inline Elements)</h2>
+<!-- 잘못된 인라인 요소 사용 (예: <span>) -->
+<span class="incorrect">
+    This is an incorrect example where text-indent is applied to an inline element. The text-indent will not be applied.
+</span>
+<p class="incorrect">
+    This is an correct example where text-indent is applied to an inline element. The text-indent will be applied.
+</p>
+</body>
+</html>

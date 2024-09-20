@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>non-replaced elements - Content - Box Model | Practical CSS</title>
+    <style>
+        .box {
+            width: 300px;
+            border: 2px solid black;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        .parent-box {
+            width: 300px;
+            border: 2px solid black;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        .child-box {
+            border: 1px solid red;
+            padding: 10px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+<h2>Text Content</h2>
+<div class="box">
+    <p>This is an example of content that is just plain text. Text content is the simplest form of content in HTML elements.</p>
+</div>
+
+<h2>Descendant Boxes</h2>
+<div class="parent-box">
+    <div class="child-box">Child Box 1</div>
+    <div class="child-box">Child Box 2</div>
+</div>
+</body>
+</html>

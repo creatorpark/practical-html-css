@@ -11,7 +11,6 @@ DOM Parsing
 그리고 자주 사용하는 HTML Entity는 여기에 있다고 설명하면됨.
 이 부분은 DOM Parsing 이야기 할 때 다시 나오니까 주의 깊게 보세요.
 
-
 스토리
 시작은 HTML 작성법을 설명하고
 이 때 <>는 HTML Entity라고 살명하고 이런건 따로 쓴다고 설명하면됨.

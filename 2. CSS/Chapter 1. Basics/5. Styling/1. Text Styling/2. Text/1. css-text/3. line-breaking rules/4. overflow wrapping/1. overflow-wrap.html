@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>overflow-wrap - Line-Breaking - Text | Practical CSS</title>
+    <style>
+        .box {
+            width: 280px;
+            border: 1px solid #ccc;
+            padding: 10px;
+            word-break: normal;
+        }
+
+        .label {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .comparison-section {
+            display: grid;
+            grid-template-columns: 150px 300px 300px 300px;
+            align-items: start;
+            gap: 5px;
+            margin-bottom: 30px;
+        }
+
+        .normal { overflow-wrap: normal; }
+        .anywhere { overflow-wrap: anywhere; }
+        .break-word { overflow-wrap: break-word; }
+        
+        .with-min-content { width: min-content; }
+    </style>
+</head>
+<body>
+
+<h2>overflow-wrap</h2>
+<div class="comparison-section">
+    <h3>overflow-wrap</h3>
+    <div class="box normal">
+        <!-- non-CJK는 단어 단위 -->
+        <div class="label">normal</div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit eum saepe cum, atque expedita, aliquid blanditiis, fugiat nesciunt ipsam tempora dignissimos. Sint expedita omnis sit! Doloribus quasi saepe pariatur? Officia?
+        12324432247324879347843784378394987324732847493292743!
+    </div>
+    <div class="box anywhere">
+        <div class="label">anywhere</div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit eum saepe cum, atque expedita, aliquid blanditiis, fugiat nesciunt ipsam tempora dignissimos. Sint expedita omnis sit! Doloribus quasi saepe pariatur? Officia?
+        12324432247324879347843784378394987324732847493292743!
+    </div>    
+    <div class="box break-word">
+        <div class="label">break-word</div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit eum saepe cum, atque expedita, aliquid blanditiis, fugiat nesciunt ipsam tempora dignissimos. Sint expedita omnis sit! Doloribus quasi saepe pariatur? Officia?
+        12324432247324879347843784378394987324732847493292743!
+    </div>
+</div>
+<div class="comparison-section">
+    <h3>overflow-wrap with width : min-content</h3>
+    <div class="box normal">
+        <div class="label">normal</div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit eum saepe cum, atque expedita, aliquid blanditiis, fugiat nesciunt ipsam tempora dignissimos. Sint expedita omnis sit! Doloribus quasi saepe pariatur? Officia?
+    </div>
+    <div class="box anywhere with-min-content">
+        <div class="label">anywhere</div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit eum saepe cum, atque expedita, aliquid blanditiis, fugiat nesciunt ipsam tempora dignissimos. Sint expedita omnis sit! Doloribus quasi saepe pariatur? Officia?
+    </div>    
+    <div class="box break-word with-min-content">
+        <div class="label">break-word</div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit eum saepe cum, atque expedita, aliquid blanditiis, fugiat nesciunt ipsam tempora dignissimos. Sint expedita omnis sit! Doloribus quasi saepe pariatur? Officia?
+    </div>
+</div>
+</body>
+</html>

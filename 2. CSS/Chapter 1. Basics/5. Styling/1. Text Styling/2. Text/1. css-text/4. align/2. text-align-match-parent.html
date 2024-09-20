@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>match-parent - Text Align - Text | Practical CSS</title>
+    <style>
+        .box {
+            width: 300px;
+            border: 1px solid #000;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+
+        .parent-left {
+            text-align: left;
+        }
+
+        .parent-right {
+            text-align: right;
+        }
+
+        .parent-center {
+            text-align: center;
+        }
+
+        .parent-justify {
+            text-align: justify;
+        }
+
+        .child {
+            text-align: match-parent;
+            background-color: #f0f0f0;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+
+<h2>Text Align - Match Parent Example</h2>
+
+<!-- 부모 요소가 left 정렬 -->
+<div class="box parent-left">
+    <div class="label">Parent: text-align left</div>
+    <div class="child">Child with match-parent alignment. The child text aligns to the left because the parent is left-aligned.</div>
+</div>
+
+<!-- 부모 요소가 right 정렬 -->
+<div class="box parent-right">
+    <div class="label">Parent: text-align right</div>
+    <div class="child">Child with match-parent alignment. The child text aligns to the right because the parent is right-aligned.</div>
+</div>
+
+<!-- 부모 요소가 center 정렬 -->
+<div class="box parent-center">
+    <div class="label">Parent: text-align center</div>
+    <div class="child">Child with match-parent alignment. The child text aligns to the center because the parent is center-aligned.</div>
+</div>
+
+<!-- 부모 요소가 justify 정렬 -->
+<div class="box parent-justify">
+    <div class="label">Parent: text-align justify</div>
+    <div class="child">Child with match-parent alignment. The child text aligns justified because the parent is justified.</div>
+</div>
+
+</body>
+</html>

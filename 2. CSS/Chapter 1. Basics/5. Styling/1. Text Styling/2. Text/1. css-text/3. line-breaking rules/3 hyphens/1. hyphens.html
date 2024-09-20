@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hyphens - Line-Breaking - Text | Practical CSS</title>
+    <style>
+        .box {
+            width: 280px;
+            border: 1px solid #ccc;
+            padding: 10px;
+            word-break: normal;
+        }
+
+        .label {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .comparison-section {
+            display: grid;
+            grid-template-columns: 150px 300px 300px 300px;
+            align-items: start;
+            gap: 5px;
+            margin-bottom: 30px;
+        }
+
+        .none { hyphens: none; }
+        .manual { hyphens: manual; }
+        .auto { hyphens: auto; }
+    </style>
+</head>
+<body>
+
+<div class="comparison-section">
+    <h3>Hyphens Comparison</h3>
+    <div class="box none">
+        <div class="label">hyphens: none</div>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat ipsa hic possimus praesentium magnam, maxime nisi architecto accusamus delectus vel quisquam error rem deleniti modi porro officia nobis magni corporis?
+    </div>
+    <div class="box manual">
+        <div class="label">hyphens: manual</div>
+        Lorem ipsum, dolor sit amet consect-etur adipisicing elit. Repellat ipsa hic possimus praesentium magnam, maxime nisi architecto accusamus delectus vel quisquam error rem deleniti modi porro officia nobis magni corporis?
+    </div>
+    <div class="box auto">
+        <div class="label">hyphens: auto</div>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat ipsa hic possimus praesentium magnam, maxime nisi architecto accusamus delectus vel quisquam error rem deleniti modi porro officia nobis magni corporis?
+    </div>
+</div>
+
+</body>
+</html>

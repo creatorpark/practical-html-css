@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Align - Text | Practical CSS</title>
+    <style>
+        .box {
+            width: 300px;
+            border: 1px solid #000;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+
+        .start { text-align: start; }
+        .end { text-align: end; }
+        .left { text-align: left; }
+        .right { text-align: right; }
+        .center { text-align: center; }
+        .justify { text-align: justify; }
+        .justify-all { text-align: justify-all; }
+        .match-parent { text-align: match-parent; }
+    </style>
+</head>
+<body>
+
+<h2>Text Align Examples</h2>
+
+<div class="box start">This text is aligned to the start of the container. (Start)</div>
+<div class="box end">This text is aligned to the end of the container. (End)</div>
+<div class="box left">This text is aligned to the left side of the container. (Left)</div>
+<div class="box right">This text is aligned to the right side of the container. (Right)</div>
+<div class="box center">This text is aligned to the center of the container. (Center)</div>
+<div class="box justify">This text is justified, meaning it is stretched so that both sides of the text are aligned to the edges of the container. (Justify)</div>
+<div class="box justify-all">This text is justified-all, meaning all lines, including the last one, are aligned to both sides of the container. (Justify-all)</div>
+
+<!-- 이 예제 찾아보자 -->
+<div class="box match-parent" style="text-align: justify;">This text inherits the alignment from the parent container. (Match-parent)</div>
+
+</body>
+</html>

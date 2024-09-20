@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>word-break - Line-Breaking - Text | Practical CSS</title>
+    <style>
+        .box {
+            width: 280px;
+            border: 1px solid #ccc;
+            padding: 10px;
+        }
+
+        .label {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .comparison-section {
+            display: grid;
+            grid-template-columns: 150px 300px 300px 300px;
+            align-items: start;
+            gap: 5px;
+            margin-bottom: 30px;
+        }
+
+        .equals {
+            background-color: #e6ffe6;
+        }
+
+        .normal { word-break: normal; }
+        .break-all { word-break: break-all; }
+        .keep-all { word-break: keep-all; }
+    </style>
+</head>
+<body>
+
+<h2>Word-break Examples</h2>
+
+<div class="comparison-section">
+    <h3>NON-CJK (영어 텍스트)</h3>
+    <div class="box normal equals">
+        <div class="label">word-break: normal</div>
+        ThisisaverylongEnglishwordthatcanbreakbetweenlettersanywhere. Here is a normal sentence with spaces, and words wrap naturally at word boundaries without breaking in the middle.
+    </div>
+    <div class="box break-all">
+        <div class="label">word-break: break-all</div>
+        ThisisaverylongEnglishwordthatcanbreakbetweenlettersanywhere. Here is a normal sentence with spaces, and words can break between letters if necessary.
+    </div>
+    <div class="box keep-all equals">
+        <div class="label">word-break: keep-all</div>
+        ThisisaverylongEnglishwordthatcanbreakbetweenlettersanywhere. Here is a normal sentence with spaces, and words wrap naturally at word boundaries without breaking in the middle.
+    </div>    
+</div>
+
+<div class="comparison-section">
+    <h3>CJK (한글 텍스트)</h3>
+    <div class="box normal equals">
+        <div class="label">word-break: normal</div>
+        이것은공백이없는매우긴한글단어입니다이단어는줄바꿈이가능한모든위치에서줄이끊어질수있습니다. 여기에 공백이 포함된 정상적인 문장이 있으며, 글자 단위로 줄바꿈이 발생할 수 있습니다.
+    </div>
+    <div class="box break-all equals">
+        <div class="label">word-break: break-all</div>
+        이것은공백이없는매우긴한글단어입니다이단어는줄바꿈이가능한모든위치에서줄이끊어질수있습니다. 여기에 공백이 포함된 정상적인 문장이 있으며, 글자 단위로 줄바꿈이 발생할 수 있습니다.
+    </div>
+    <div class="box keep-all">
+        <div class="label">word-break: keep-all</div>
+        이것은공백이없는매우긴한글단어입니다이단어는줄바꿈이일어나지않고문장전체가이어집니다. 여기에 공백이 포함된 정상적인 문장이 있으며, 단어 경계에서만 줄바꿈이 발생하고 글자 사이에서는 발생하지 않습니다.
+    </div>    
+</div>
+
+</body>
+</html>

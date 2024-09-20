@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Indent - Text | Practical CSS</title>
+    <style>
+        .box {
+            width: 300px;
+            border: 1px solid #000;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+
+        .indent-40px {
+            text-indent: 40px;
+        }
+
+        .negative-indent {
+            text-indent: -20px;
+        }
+
+        .percent-indent {
+            text-indent: 10%;
+        }
+    </style>
+</head>
+<body>
+
+<h2>Text Indent Examples</h2>
+
+<div class="box indent-40px">
+    <p>This is an example with a 40px text-indent. The first line of this paragraph is indented by 40px.</p>
+</div>
+
+<div class="box negative-indent">
+    <p>This is an example with a negative indent. The first line is indented to the left by 20px, outside the container.</p>
+</div>
+
+<div class="box percent-indent">
+    <p>This is an example with a 10% text-indent. The first line is indented by 10% of the width of the container.</p>
+</div>
+</body>
+</html>
