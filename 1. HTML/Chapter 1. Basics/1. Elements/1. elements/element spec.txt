@@ -6,3 +6,4 @@ Tags
 
 document.getelementBy
 
+Attributes 에 대한 설명

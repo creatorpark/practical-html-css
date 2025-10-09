@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Style Resolution - Critical Rendering Path | Practical CSS</title>
+    <style>
+        body {
+            font-family: sans-serif;
+        }
+
+        .box {
+            width: 150px;
+            height: 150px;
+            background: lightblue;
+            transition: none; /* ✅ transition 제거 */
+        }
+    </style>
+
+</head>
+<body>
+    <button id="updateBtn">Trigger Stage 1</button>
+    <div class="box" id="target">Box</div>
+
+    <script>
+        // ① DOM 생성
+        document.addEventListener("DOMContentLoaded", () => {
+            console.log("① DOM Tree Created");
+            console.log(document.body);
+        });
+
+        // ② CSSOM 생성 (CSSRuleList 확인)
+        window.addEventListener("load", () => {
+            console.log("② CSSOM Tree Created");
+            console.log(document.styleSheets[0].cssRules);
+        });
+
+        // ③ 버튼 클릭 → DOM Update + Style 변경 → Stage 1 트리거
+        const btn = document.getElementById("updateBtn");
+        const box = document.getElementById("target");
+
+        btn.addEventListener("click", () => {
+            console.log("③ DOM Update Triggered");
+            // DOM 속성 변경 → Style Recalculation 발생
+            box.textContent = "Updated!";
+            box.style.backgroundColor = "coral";
+            box.style.fontSize = "2em";
+            console.log("④ Recalculate Style (Stage 1) Expected");
+            // 이후 DevTools Performance 탭에서 "Recalculate Style" 이벤트 확인
+        });
+    </script>        
+</body>
+</html>

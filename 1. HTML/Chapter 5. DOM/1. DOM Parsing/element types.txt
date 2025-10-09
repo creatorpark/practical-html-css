@@ -24,7 +24,7 @@ https://en.wikipedia.org/wiki/HTML_element
 : mathML, SVG namespace에 속한 Elements를 사용합니다.
 
 3-2. The template element 
-: == Vue Template 
+: =!= Vue Template 
 
 Template 요소는 template contents를 갖는데, 이는 template의 자식은 아니다.
 template contents는 기본 Document를 방해하지 않도록 
