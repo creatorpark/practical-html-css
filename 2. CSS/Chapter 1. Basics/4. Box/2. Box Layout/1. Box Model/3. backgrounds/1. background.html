@@ -14,12 +14,21 @@
     }
 
     .box {
-      width: 200px;
-      height: 200px;
+      width: 600px;
+      height: 600px;
       margin: 10px;
       border: 1px solid #ccc;
       text-align: center;
       line-height: 200px;
+    }
+
+    .origin-clip {
+      background-image: url('https://picsum.photos/200');
+      background-repeat: no-repeat;
+      background-origin: content-box;
+      background-clip: content-box;
+      padding: 20px;
+      border: 10px solid rgba(0, 0, 0, 0.3);
     }
   </style>
 </head>
@@ -29,6 +38,7 @@
     <div class="box" style="background-image: url('https://picsum.photos/200'); background-size: cover;">Image Background</div>
     <div class="box" style="background-image: url('https://picsum.photos/200'); background-repeat: repeat;">Repeated Image</div>
     <div class="box" style="background-color: #00f; background-position: center right;">Positioned Background</div>
+    <div class="box origin-clip">Origin & Clip</div>
   </div>
 </body>
 </html>
